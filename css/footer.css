@@ -1,0 +1,59 @@
+@import url('style.css');
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.contact,
+.map,
+.terms,
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  color: black;
+}
+.terms a {
+  color: var(--secondary-font-color);
+}
+
+.social-links-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.map-iframe {
+  width: 80%;
+  height: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+.terms ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.terms li {
+  margin: 0 8px;
+}
+
+.footer-links a {
+  color: var(--main-font-color);
+  text-decoration: none;
+  padding: 20px;
+  font-weight: bold;
+}
