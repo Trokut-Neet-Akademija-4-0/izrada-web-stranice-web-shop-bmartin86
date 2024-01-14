@@ -16,8 +16,9 @@
   --main-font-color: white;
   --secondary-font-color: #551a8b;
   /* --main-font-size: 1.2rem; */
-  --small-font-size: 0.8em;
-  --medium-font-size: 1em;
+  --small-font-size: .8em;
+  --medium-font-size: .9em;
+  --big-font-size: 1.2em
 }
 
 body {

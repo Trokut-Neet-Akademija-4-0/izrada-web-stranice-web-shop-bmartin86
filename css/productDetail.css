@@ -71,6 +71,10 @@
   background-color: rgb(227, 225, 225);
 }
 
+.size-box:hover {
+  cursor: pointer;
+}
+
 #add-to-bag {
   width: 100%;
   border: none;
