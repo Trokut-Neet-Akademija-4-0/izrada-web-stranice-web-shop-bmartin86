@@ -97,7 +97,7 @@
   cursor: pointer;
 }
 
-.icon-div {
+.trash-icon-div {
   flex: 1;
   margin: 0 auto;
   position: relative;
@@ -113,10 +113,15 @@
   cursor: pointer;
 }
 
+#trash-icon:active {
+  transform:scale(1.14);
+}
+
 #cart-right {
   flex: 1;
   background-color: white;
   padding: 2em 1em;
+  height: 40vh;
 }
 
 #checkout-wrapper {
@@ -124,6 +129,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 }
 
 #login-outer {
@@ -138,7 +144,8 @@
   background-color: rgb(19, 19, 19);
 }
 
-#log-in-box a {
+#log-in-box a,
+#check-out-box a {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
@@ -180,11 +187,18 @@
   background-color: rgb(19, 19, 19);
 }
 
-#check-out-box a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
+#check-out-box:hover,
+#log-in-box:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
+
+#check-out-box:active,
+#log-in-box:active {
+  transform:scale(1.014);
+}
+
+
 
 
 
