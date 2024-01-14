@@ -120,6 +120,11 @@
   text-decoration: none;
 }
 
+#products-aside a:hover {
+  text-decoration: underline;
+  color: rgb(223, 23, 23);
+}
+
 
 
 

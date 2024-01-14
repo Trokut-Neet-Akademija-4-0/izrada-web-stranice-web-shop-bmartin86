@@ -83,25 +83,17 @@
   font-size: 1em;
   font-weight: 700;
   padding: 1em 0;
+  transition: opacity 1s smooth;
 }
 
 #add-to-bag:hover {
   opacity: 0.85;
-  transition: 1s smooth;
-}
-
-#add-to-bag:active {
-
+  cursor: pointer;
 }
 
 .description-text-div {
   margin: 3em 0;
 }
-
-/* .description-text-div h3,
-.materials-div h3 {
-  text-decoration: underline;
-} */
 
 .right-div ul {
   list-style: none;
