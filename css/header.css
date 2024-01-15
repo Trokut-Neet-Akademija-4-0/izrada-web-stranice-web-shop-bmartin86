@@ -3,8 +3,8 @@
 .header-top-row {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  padding-top: 2rem;
+  align-items: center;
+  padding-top: 1em;
 }
 
 .contact-info,
@@ -20,37 +20,50 @@
 
 .contact-info a,
 .search-cart a {
-  color: #fff;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 1em;
+  color: black;
 }
 
 .search-cart input {
   padding: 6px;
   margin-right: 10px;
-  border: 1px solid #fff;
+  border: 1px solid black;
   border-radius: 5px;
   width: 200px;
 }
 
- .logo-row h1 {
+#cart-box {
+  padding: .4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cart-icon {
+  height: 1.3em;
+}
+
+ .logo-box p {
   display: flex;
   justify-content: center;
-  font-family: var(--secondary-font);
+  font-family: var(--logo-font);
   font-size: 3.6rem;
-  margin-top: 2rem;
+  margin: 0;
+  font-weight: 100;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  padding-bottom: 1.6rem;
+  padding: 1em 0;
 }
 
 nav a {
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  padding: 16px;
+  padding: 1em;
   margin: 0 10px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.1em;
 }
