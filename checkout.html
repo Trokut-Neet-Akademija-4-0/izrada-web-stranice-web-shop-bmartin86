@@ -16,23 +16,48 @@
     </div>
     <div class="checkout-main-flexbox">
       <div class="checkout-left-flexbox">
-        <h3>My information</h3>
+        <h3 id="my-info">My information</h3>
         <div class="form-div">
           <form action="#" method="get">
             <div class="input-flex">
-              <input type="email" class="full-width" name="email" placeholder="E-mail*" />
-              <input type="text" name="name" placeholder="Name*" />
+              <input type="email" class="full-width" name="email" placeholder="E-mail*" required />
+              <input type="text" name="name" placeholder="Name*" required />
               <input type="text" name="surname" placeholder="Surname*" />
-              <input type="text" class="full-width" name="card" placeholder="Card number*" />
-              <input type="text" name="cvv" placeholder="CVV*" />
-              <input type="date" name="date" placeholder="Expiration date*" />
+              <input type="text" class="full-width" name="card" placeholder="Card number*" required />
+              <input type="text" name="cvv" placeholder="CVV*" required />
+              <input type="date" name="date" placeholder="Expiration date*" required />
             </div>
             <div id="submit-box">
-              <input type="submit" id="form-submit" value="Proceed to payment">
+              <input type="submit" id="form-submit" value="Proceed to payment" />
+            </div>
+            <div class="checkbox-wrapper">
+              <div class="checkbox">
+                <div>
+                  <input type="checkbox" required name="required-checkbox" />
+                </div>
+                <div>
+                  <label for="required-checkbox">
+                    Prihvaćam prikupljanje i obradu osobnih podataka danih u obrascu bez kojih moj zahtjev ne može biti ispunjen, te da me New Style kontaktira u svrhu slanja obavijesti.
+                  </label>
+                </div>
+              </div>
+              <div class="checkbox">
+                <div>
+                  <input type="checkbox" name="newsletter" />
+                </div>
+                <div>
+                  <label for="newsletter">
+                    Prijavi me na newsletter              
+                  </label>
+                </div>
+              </div>
             </div>
           </form>
         </div>
-        <h3>View order details</h3>
+        <div id="form-h3">
+          <h3>View order details</h3>
+          <span>2 items</span>
+        </div>
         <div class="checkout-products-wrapper">
           <div class="checkout-products-flexbox">
             <div class="description-row">2 items</div>
@@ -48,7 +73,46 @@
         </div>
       </div>
       <div class="transaction-info-wrapper">
-        <div>28.99&euro;</div>
+        <div class="transaction-info-flexbox">
+          <div class="transaction-info-row">
+            <div>Discounts</div>
+            <div>none</div>
+          </div>
+          <div class="transaction-info-row">
+            <div>Order value</div>
+            <div>60.99&euro;</div>
+          </div>
+          <div class="transaction-info-row">
+            <div>Promotion</div>
+            <div id="discount">19.99&euro;</div>
+          </div>
+          <div class="transaction-info-row">
+            <div>Shipping</div>
+            <div>5.99&euro;</div>
+          </div>
+          <div id="transaction-info-bold">
+            <div>Total</div>
+            <div>46.99&euro;</div>
+          </div>
+          <div>
+            <div id="disclaimer">
+              <div>
+                By continuing, you agree to <span><br></span>New Style's <a href="termsAndConditions.html" >General Terms and Conditions.</a>
+              </div>
+              <div>
+                We will process your personal data in accordance with New Style's <a href="privacy.html">Privacy Notice.</a>
+              </div>
+              <div>
+                Please note that the tax amount is an estimation and the final amount can change. If the estimated tax is presented as TBD, the order value does not include any tax and it will be added when the items are shipped.
+              </div>
+              <div>
+                Need help? Please contact <a href="contact.html">Customer Service.</a> <span><br></span>
+                For quick help, chat with us!.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </main>
