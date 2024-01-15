@@ -3,19 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping bag</title>
+  <title>Checkout</title>
   <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
   <header>
     <iframe src="partials/header.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
   </header>
-  <main>
-checkout
+  <main id="checkout-main">
+    <div id="checkout-h1-box">
+      <h1>Checkout</h1>
+    </div>
+    <div class="checkout-main-flexbox">
+      <div class="checkout-left-flexbox">
+        <h3>My information</h3>
+        <div class="form-div">
+          <form action="#" method="get">
+            <div class="input-flex">
+              <input type="email" class="full-width" name="email" placeholder="E-mail*" />
+              <input type="text" name="name" placeholder="Name*" />
+              <input type="text" name="surname" placeholder="Surname*" />
+              <input type="text" class="full-width" name="card" placeholder="Card number*" />
+              <input type="text" name="cvv" placeholder="CVV*" />
+              <input type="date" name="date" placeholder="Expiration date*" />
+            </div>
+            <div id="submit-box">
+              <input type="submit" id="form-submit" value="Proceed to payment">
+            </div>
+          </form>
+        </div>
+        <h3>View order details</h3>
+        <div class="checkout-products-wrapper">
+          <div class="checkout-products-flexbox">
+            <div class="description-row">2 items</div>
+            <div class="products-row">
+              <div>
+                <img src="images/products/women-jeans.webp" alt="women jeans" class="checkout-img">
+              </div>
+              <div>
+                <img src="images/products/men-shirt5.webp" alt="men shirt" class="checkout-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="transaction-info-wrapper">
+        <div>28.99&euro;</div>
+      </div>
+    </div>
   </main>
-<footer>
-  <iframe src="partials/footer.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-</footer>
-<script src="js/javascript.js"></script>
+  <footer>
+    <iframe src="partials/footer.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+  </footer>
+  <script src="js/javascript.js"></script>
 </body>
 </html>
