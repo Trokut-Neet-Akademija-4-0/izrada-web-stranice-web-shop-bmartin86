@@ -3,7 +3,7 @@
 .product-wrapper {
   display: flex;
   background-color: var(--fourth-color);
-  padding: 0 2em;
+  /* padding: 1em; */
 }
 .left-div {
   display: flex;
@@ -22,8 +22,7 @@
 
 .right-div {
   flex: 1;
-  padding-top: 2em;
-  padding-left: 2em;
+  padding: 2em;
 }
 
 .product-description-div {
@@ -75,20 +74,31 @@
   cursor: pointer;
 }
 
-#add-to-bag {
+#add-to-bag,
+#see-cart {
   width: 100%;
+  font-weight: 700;
+  padding: 1em 0;
+  font-size: 1em;
+}
+
+#add-to-bag {
   border: none;
   background-color: black;
   color: #FFF;
-  font-size: 1em;
-  font-weight: 700;
-  padding: 1em 0;
+  margin-bottom: 1em;
   transition: opacity 1s smooth;
 }
 
-#add-to-bag:hover {
+#add-to-bag:hover,
+#see-cart:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+#add-to-bag:active,
+#see-cart:active {
+  transform:scale(1.02);
 }
 
 .description-text-div {

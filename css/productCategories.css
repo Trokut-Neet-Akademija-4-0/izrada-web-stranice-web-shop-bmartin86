@@ -1,15 +1,15 @@
 @import url('style.css');
 
 #categories-main-div {
-  margin: 0 15vw;
+  margin: 0 10vw;
+  padding-bottom: 10vh;
 }
-main h2 {
+main h1 {
   margin: 0;
-  padding: 1em 0;
-  border-top: 2px ridge rgb(0,0,0,0.8);
+  padding: 2em 0;
 }
 
-.h2-div {
+.h1-div {
   text-align: center;
 }
 
@@ -42,11 +42,16 @@ main h2 {
   width: 100%;
 }
 
+.category-card-div:hover {
+  transform:scale(1.015);
+}
+
 .category-card-div {
   background-color: var(--fourth-color);
   width: 20%;
   padding-top: .8em;
   padding-bottom: 1em;
+  transition: transform .3s;
 }
 
 .cat-card-name {

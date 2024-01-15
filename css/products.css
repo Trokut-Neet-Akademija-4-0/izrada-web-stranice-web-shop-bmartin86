@@ -1,15 +1,14 @@
 @import url('style.css');
 
 #products-main-wrapper {
-  background-color: aquamarine;
   display: flex;
 }
 
 #products-div {
-  background-color: white;
   flex: 4;
   display: flex;
   flex-direction: column;
+  padding: 0 1em;
 }
 
 #products-header h1 {
@@ -38,7 +37,6 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  /* background-color: var(--fourth-color); */
 }
 
 .product-img {
@@ -72,7 +70,7 @@
 .product-name:hover {
   text-decoration: underline;
   cursor: pointer;
-} 
+}
 
 .product-name {
   letter-spacing: .03em;
@@ -85,8 +83,6 @@
 /* aside section */
 
 #products-aside {
-  background-color: white;
-  /* color: wheat; */
   flex: 1;
   padding-left: 2em;
   padding-top: .6em;

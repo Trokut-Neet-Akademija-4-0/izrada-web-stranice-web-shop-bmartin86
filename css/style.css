@@ -11,6 +11,7 @@
   --secondary-color: #ecc5a1;
   --third-color: #b4d2c8;
   --fourth-color: #f9f7f7;
+  --light-background-color: #FAF9F8;
   --secondary-font: 'Dancing Script', cursive;
   --main-font: 'Roboto Flex', sans-serif; 
   --main-font-color: white;
@@ -32,6 +33,7 @@ header {
 }
 
 main {
+  background-color: var(--light-background-color);
   /* background: var(--third-color);
   background: linear-gradient(180deg, var(--third-color) 0%, var(--secondary-color) 50%, var(--third-color)); */
 }

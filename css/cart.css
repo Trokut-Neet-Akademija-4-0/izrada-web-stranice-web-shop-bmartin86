@@ -1,12 +1,12 @@
 @import url('style.css');
 
 #cart-main {
-  padding: 0 10vw;
+  padding: 0 10vw 10vh;
 }
 .title-div h1 {
   margin: 0;
   text-align: center;
-  padding-bottom: .8em;
+  padding: 2em 0 1em;
   letter-spacing: .04em;
 }
 
