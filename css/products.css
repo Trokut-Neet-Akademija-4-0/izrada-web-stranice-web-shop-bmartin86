@@ -2,6 +2,7 @@
 
 #products-main-wrapper {
   display: flex;
+  background-color: var(--secondary-background-color);
 }
 
 #products-div {

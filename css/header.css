@@ -22,7 +22,8 @@
 .search-cart a {
   text-decoration: none;
   margin-right: 1em;
-  color: black;
+  /* color: black; */
+  color: var(--main-text-color);
 }
 
 .search-cart input {
@@ -41,29 +42,16 @@
 }
 
 #cart-icon {
-  height: 1.3em;
+  height: 1em;
 }
 
- .logo-box p {
+ .logo-box h1 {
   display: flex;
   justify-content: center;
-  font-family: var(--logo-font);
+  font-family: var(--header-font);
   font-size: 3.6rem;
   margin: 0;
   font-weight: 100;
+  color: var(--main-text-color);
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  padding: 1em 0;
-}
-
-nav a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  padding: 1em;
-  margin: 0 10px;
-  font-weight: 600;
-  font-size: 1.1em;
-}

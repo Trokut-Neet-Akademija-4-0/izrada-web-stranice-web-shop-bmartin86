@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Lora&family=Noto+Serif:wght@100;200;300;400;500&display=swap');
 
-
 .auto-height-iframe {
   border: none;
   width: 100%;
@@ -10,36 +9,107 @@
 }
 
 :root {
+/* 
+
+--main-text-color
+--secondary-text-color
+
+ */
+  
+  --main-text-font: 'Roboto Flex', sans-serif; 
+  --header-font: 'Noto Serif', Arial;
+  --main-text-color: white;
+  --secondary-text-color: #551a8b;
+  --main-background-color : #f9f7f7;
+  --secondary-background-color : #fff;
+
   --main-color: rgba(255, 255, 255, 0.6);
-  --secondary-color: #ecc5a1;
-  --third-color: #b4d2c8;
-  --fourth-color: #f9f7f7;
-  --light-background-color: #FAF9F8;
-  --secondary-font: 'Dancing Script', cursive;
-  --main-font: 'Roboto Flex', sans-serif; 
-  --logo-font: 'Noto Serif', Arial;
-  --logo-3-font: 'Lora', Arial;
-  --main-font-color: white;
-  --secondary-font-color: #551a8b;
+
+
   /* --main-font-size: 1.2rem; */
   --small-font-size: .8em;
   --medium-font-size: .9em;
   --big-font-size: 1.2em
 }
 
+/* opći stilovi */
 body {
   margin: 0 auto;
-  font-family: var(--main-font);
+  font-family: var(--main-text-font);
 }
 
 header {
-  background-color: var(--fourth-color);
+  /* background-color: var(--main-background-color); */
+  background-color: black;
+  color: var(--main-text-color);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+nav a {
+  /* color: rgb(0, 0, 0); */
+  color: var(--main-text-color);
+  text-decoration: none;
+  padding: 1em;
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-transform: uppercase;
 }
 
 main {
   height: 100%;
-  background-color: var(--fourth-color);
+  background-color: var(--main-background-color);
   padding-bottom: 3em;
+}
+
+main h1,
+main h2 {
+  font-family: var(--header-font);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#checkout-title-div h3,
+#cart-title-div h3 {
+  margin: 0;
+  text-align: center;
+  padding: 1em 0;
+  letter-spacing: .06em;
+  font-size: 2em;
+}
+
+#log-in-box,
+#check-out-box {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  background-color: rgb(19, 19, 19);
+}
+
+#log-in-box a,
+#check-out-box a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+#check-out-box:hover,
+#log-in-box:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#check-out-box:active,
+#log-in-box:active,
+#submit-box:active {
+  transform:scale(1.014);
 }
 
 #hero-wrapper {
@@ -47,7 +117,7 @@ main {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Monika_Jagaciak_women_model-795490.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../images/Monika_Jagaciak_women_model-795490.jpg");
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,7 +139,7 @@ main {
   display: inline-block;
   padding: 10px 25px;
   color: black;
-  /* background-color: #ddd; */
+  background-color: #ddd;
   text-align: center;
   cursor: pointer;
   transition: background-color .15s;
@@ -81,12 +151,11 @@ main {
 }
 
 #logo-text {
-  font-family: var(--logo-font);
+  
   font-size: 15vh;
   margin: 0;
   font-weight: 100;
 }
-
 
 .main-wrapper {
   display: flex;
@@ -95,10 +164,7 @@ main {
 }
 
 footer {
-  /* background: var(--main-color);
-  background: linear-gradient(180deg, var(--third-color) 0%,  var(--main-color) 100%); */
   background-color: #c0bebe;
-  /* background-color: rgb(199, 199, 199); */
 }
 
 /* products section */
@@ -111,7 +177,6 @@ footer {
   margin: 0;
   padding: 1em 0;
   font-size: 2.4em;
-  font-family: var(--logo-font);
   letter-spacing: .2em;
 }
 
@@ -136,12 +201,11 @@ footer {
 
 .index-categories-section h2 {
   margin-bottom: 0;
-  font-family: var(--logo-font);
 }
 
 .index-categories-outer-div {
   display: flex;
-  background-color: var(--fourth-color);
+  background-color: var(--main-background-color);
   padding: 10px;
   margin-top: 8px;
   box-shadow: 0px 1px 10px gray;

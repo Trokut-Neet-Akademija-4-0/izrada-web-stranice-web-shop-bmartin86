@@ -2,7 +2,7 @@
 
 .product-wrapper {
   display: flex;
-  background-color: var(--fourth-color);
+  background-color: var(--secondary-background-color);
   /* padding: 1em; */
 }
 .left-div {
@@ -22,16 +22,17 @@
 
 .right-div {
   flex: 1;
-  padding: 2em;
+  padding: 1.6em 2em;
 }
 
 .product-description-div {
-  background-color: var(--fourth-color);
+  background-color: var(--secondary-background-color);
 }
 
 .product-description-div h3 {
   margin-top: 0;
   margin-bottom: 1.6em;
+  font-size: 1.4em;
 }
 
 .product-description-div p {
@@ -67,7 +68,7 @@
   justify-content: center;
   border: 1px solid rgb(190, 190, 190);
   font-size: var(--small-font-size);
-  background-color: rgb(227, 225, 225);
+  background-color: var(--main-background-color);
 }
 
 .size-box:hover {
@@ -88,6 +89,10 @@
   color: #FFF;
   margin-bottom: 1em;
   transition: opacity 1s smooth;
+}
+
+#see-cart {
+  background-color: var(--main-background-color);
 }
 
 #add-to-bag:hover,

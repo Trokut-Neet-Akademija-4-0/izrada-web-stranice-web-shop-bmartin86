@@ -1,8 +1,8 @@
 @import url('style.css');
 
 #categories-main-div {
-  margin: 0 10vw;
-  padding-bottom: 10vh;
+  padding: 0 10vw 10vh;
+  background-color: var(--secondary-background-color);
 }
 main h1 {
   margin: 0;
@@ -12,11 +12,15 @@ main h1 {
 .h1-div {
   text-align: center;
 }
+/* 
+.categories-wrapper-div,
+.category-card-div {
+  background-color: var(--main-background-color);
+} */
 
 .categories-wrapper-div {
   display: flex;
   flex-direction: column;
-  background-color: var(--fourth-color);
 }
 
 .category-name-div a {
@@ -47,7 +51,6 @@ main h1 {
 }
 
 .category-card-div {
-  background-color: var(--fourth-color);
   width: 20%;
   padding-top: .8em;
   padding-bottom: 1em;

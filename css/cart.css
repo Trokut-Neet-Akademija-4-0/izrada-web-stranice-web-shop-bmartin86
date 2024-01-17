@@ -3,12 +3,6 @@
 #cart-main {
   padding: 0 10vw 10vh;
 }
-.title-div h1 {
-  margin: 0;
-  text-align: center;
-  padding: 2em 0 1em;
-  letter-spacing: .04em;
-}
 
 #cart-wrapper {
   display: flex;
@@ -20,7 +14,7 @@
   flex: 2;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--secondary-background-color);
   padding: 1.6em;
   gap: .5em;
 }
@@ -75,7 +69,7 @@
 
 #item-quantity-selector {
   display: flex;
-  background-color: white;
+  background-color: var(--secondary-background-color);;
   color: black;
   width: 90px;
   border: 1px solid black;
@@ -101,7 +95,7 @@
   flex: 1;
   margin: 0 auto;
   position: relative;
-  background-color: white;
+  background-color: var(--secondary-background-color);
 }
 
 #trash-icon {
@@ -119,7 +113,7 @@
 
 #cart-right {
   flex: 1;
-  background-color: white;
+  background-color: var(--secondary-background-color);
   padding: 2em 1em;
   height: 40vh;
 }
@@ -130,25 +124,6 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-}
-
-#login-outer {
-  padding: 1em;
-  width: 100%;
-}
-
-#log-in-box {
-  width: 100%;
-  text-align: center;
-  padding: 1em 0;
-  background-color: rgb(19, 19, 19);
-}
-
-#log-in-box a,
-#check-out-box a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
 }
 
 #order-detail {
@@ -179,24 +154,6 @@
   padding: 1em 0;
 }
 
-#check-out-box {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 1em 0;
-  background-color: rgb(19, 19, 19);
-}
-
-#check-out-box:hover,
-#log-in-box:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-#check-out-box:active,
-#log-in-box:active {
-  transform:scale(1.014);
-}
 
 
 

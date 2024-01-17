@@ -1,0 +1,28 @@
+//postaviti
+about.html
+blog.html
+blogDetail.html
+contact.html
+faq.html
+index/newsletter
+header/sticky
+
+/partials
+assideBlog (about, blogDetail)
+assideProducts (2 liste/ forma - radio,checkbox)
+blogCard
+productCard
+
+//doraditi
+index.html
+header
+footer
+checkout-form
+
+//ostalo
+vendor prefix
+img optimization, alt=""
+
+*media querry responsiveness
+*SEO optimization
+
