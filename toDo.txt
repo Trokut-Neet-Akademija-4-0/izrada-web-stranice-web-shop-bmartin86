@@ -17,7 +17,6 @@ productCard
 index.html
 header
 footer
-checkout-form
 
 //ostalo
 vendor prefix

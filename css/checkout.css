@@ -81,7 +81,7 @@ input {
 }
 
 #form-submit {
-  background-color: rgb(19, 19, 19);
+  background-color: var(--button-background-black);
   color: white;
   font-weight: 700;
 }
@@ -158,7 +158,7 @@ input {
 }
 
 #discount {
-  color: rgb(223, 23, 23);
+  color: var(--discount-color-red);
   text-decoration: line-through;
 }
 
