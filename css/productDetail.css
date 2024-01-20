@@ -1,9 +1,9 @@
 @import url('style.css');
 
-.product-wrapper {
+.main-product-wrapper {
   display: flex;
   background-color: var(--secondary-background-color);
-  /* padding: 1em; */
+  padding: 1em;
 }
 .left-div {
   display: flex;

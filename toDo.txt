@@ -15,7 +15,6 @@ productCard
 
 //doraditi
 index.html
-header
 footer
 
 //ostalo
