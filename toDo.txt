@@ -2,7 +2,6 @@
 about.html
 blog.html
 blogDetail.html
-contact.html
 faq.html
 header/sticky
 
