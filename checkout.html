@@ -14,6 +14,7 @@
     <div id="checkout-title-div">
       <h2>Checkout</h2>
     </div>
+
     <div class="checkout-main-flexbox">
       <div class="checkout-left-flexbox">
         <h3 id="my-info">My information</h3>
@@ -28,44 +29,44 @@
               <input type="text" name="date" placeholder="dd/mm/yyyy*" required />
             </div>
 
-            <!-- <div class="checkbox-wrapper"> -->
-              <div class="flex-row">
-                <div class="checkbox">
-                  <div>
-                    <input type="checkbox" required name="required-checkbox" />
-                  </div>
-                  <div>
-                    <label for="required-checkbox">
-                      I accept the collection and processing of personal data provided in the form, without which my request cannot be fulfilled, and allow New Style to contact me for the purpose of sending notifications. *
-                    </label>
-                  </div>
+            <div class="flex-row">
+              <div class="checkbox">
+                <div>
+                  <input type="checkbox" required name="required-checkbox" />
                 </div>
-                <div class="checkbox">
-                  <div>
-                    <input type="checkbox" name="newsletter" />
-                  </div>
-                  <div>
-                    <label for="newsletter">
-                      Subscribe me to the newsletter.             
-                    </label>
-                  </div>
+                <div>
+                  <label for="required-checkbox">
+                    I accept the collection and processing of personal data provided in the form, without which my request cannot be fulfilled, and allow New Style to contact me for the purpose of sending notifications. *
+                  </label>
                 </div>
               </div>
-            <!-- </div> -->
+              <div class="checkbox">
+                <div>
+                  <input type="checkbox" name="newsletter" />
+                </div>
+                <div>
+                  <label for="newsletter">
+                    Subscribe me to the newsletter.             
+                  </label>
+                </div>
+              </div>
+            </div>
 
-            <div class="input-flex">
-              <div class="submit-box">
-                <input type="submit" class="form-submit" value="Proceed to payment" />
+            <div  class="input-flex-column">
+              <div>
+                  <input type="submit" id="form-submit" value="Proceed to payment" />
               </div>
               <div class="checkbox checkbox-info">
                 Fields marked with an (*) are required information.</div>
             </div>
           </form>
         </div>
+
         <div class="form-h3">
           <h3>View order details</h3>
           <span>2 items</span>
         </div>
+
         <div class="checkout-products-wrapper">
           <div class="checkout-products-flexbox">
             <div class="description-row">2 items</div>
@@ -80,6 +81,7 @@
           </div>
         </div>
       </div>
+
       <div class="transaction-info-wrapper">
         <div class="transaction-info-flexbox">
           <div class="transaction-info-row">
@@ -121,6 +123,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </main>
   <footer>

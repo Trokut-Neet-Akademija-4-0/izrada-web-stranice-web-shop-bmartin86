@@ -1,1 +1,31 @@
 @import url('style.css');
+
+#contact-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 2em;
+}
+
+#contact-section {
+  padding: 3em 1em;
+}
+
+#contact-section a {
+  color: black;
+}
+
+#contact-section a:hover {
+  text-decoration: none;
+}
+
+#contact-section li {
+  margin-top: .9em;
+  font-size: var(--medium-font-size);
+}
+
+.contact-social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.3em;
+}
+

@@ -17,11 +17,13 @@
   flex-direction: column;
   gap: 1em;
   background-color: var(--secondary-background-color);
+  
 }
 
+.form-div,
 #my-info{
   margin: 0;
-  padding: 10px;
+  padding: 1em;
 }
 
 .form-h3 {
@@ -29,13 +31,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
 }
 
-.form-div {
-  padding: 1em;
-}
-
+.input-flex-column,
 .input-flex {
   max-width: 100%;
   display: flex;
@@ -43,13 +41,18 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+
+.input-flex-column {
+  flex-direction: column;
 }
 
 .input-flex input {
   border: 1px solid black;
   border-radius: 2px;
   padding: 2%;
-  margin: 10px;
+  /* margin: 10px; */
   box-sizing: border-box;
   flex-grow: 1;
 }
@@ -58,19 +61,6 @@
   width: 100%;
 }
 
-.submit-box {
-  width: 100%;
-  text-align: center;
-}
-
-.form-submit:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-.form-submit:active {
-  transform:scale(1.02);
-}
 
 .checkout-products-wrapper {
   padding: 1em;
