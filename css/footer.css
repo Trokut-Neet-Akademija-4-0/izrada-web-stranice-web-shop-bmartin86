@@ -38,6 +38,10 @@
   margin: 0;
 }
 
+.legal a:hover {
+  text-decoration: none;
+}
+
 .contact ul,
 .legal ul {
   list-style: none;

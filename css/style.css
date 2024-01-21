@@ -9,14 +9,14 @@
 }
 
 :root {
-/* 
+/*
 
 --main-text-color
 --secondary-text-color
 
  */
-  
-  --main-text-font: 'Roboto Flex', sans-serif; 
+
+  --main-text-font: 'Roboto Flex', sans-serif;
   --header-font: 'Noto Serif', Arial;
   --main-text-color: white;
   --secondary-text-color: #551a8b;
@@ -43,7 +43,6 @@ body {
 }
 
 header {
-  /* background-color: var(--main-background-color); */
   background-color: black;
   color: var(--main-text-color);
 }
@@ -60,7 +59,6 @@ nav {
 }
 
 nav a {
-  /* color: rgb(0, 0, 0); */
   color: var(--main-text-color);
   text-decoration: none;
   padding: 0 1em;
@@ -85,12 +83,12 @@ main h2 {
   font-weight: 700;
 }
 
-#checkout-title-div h3,
-#cart-title-div h3 {
+#checkout-title-div h2,
+#cart-title-div h2 {
   margin: 0;
   text-align: center;
   padding: 1em 0;
-  letter-spacing: .06em;
+  letter-spacing: .05em;
   font-size: 2em;
 }
 
@@ -168,7 +166,7 @@ main h2 {
 
 .hero-text button:hover {
   background-color: #a9a9a9;
-  color: white;
+  /* color: white; */
   transition: background-color .1s;
 }
 
@@ -312,4 +310,77 @@ text-align: center;
 
 .blog-link a {
   font-size: var(--small-font-size);
+}
+
+/* newsletter */
+#newsletter {
+  margin: auto;
+  width: 74vw;
+  background-color: var(--secondary-background-color);
+  padding: 1em;
+  margin: 2em 0;
+  border-radius: 2px;
+}
+
+.flex-row h2 {
+  letter-spacing: .1em;
+}
+
+.flex-row h3 {
+  letter-spacing: .005em;
+}
+
+.newsletter-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newsletter-submit-box,
+#newsletter .flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-flex select,
+.newsletter-flex input {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 1.4%;
+  margin: 10px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.newsletter-submit-box {
+  margin-top: 10px;
+  width: 20%;
+}
+
+#form-submit {
+  background-color: var(--button-background-black);
+  color: white;
+  font-weight: 700;
+  padding: 1.2em 0;
+  width: 100%;
+}
+
+#form-submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#form-submit:active {
+  transform:scale(1.02);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  margin: 10px 0;
+}
+
+.checkbox-info {
+  justify-content: center;
 }

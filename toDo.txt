@@ -4,7 +4,6 @@ blog.html
 blogDetail.html
 contact.html
 faq.html
-index/newsletter
 header/sticky
 
 /partials
@@ -15,7 +14,7 @@ productCard
 
 //doraditi
 index.html
-footer
+
 
 //ostalo
 vendor prefix

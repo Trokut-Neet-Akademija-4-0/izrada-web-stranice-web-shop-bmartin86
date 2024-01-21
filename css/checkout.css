@@ -24,16 +24,16 @@
   padding: 10px;
 }
 
-.form-div {
-  width: 100%;
-}
-
-#form-h3 {
+.form-h3 {
   background-color: var(--main-background-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+}
+
+.form-div {
+  padding: 1em;
 }
 
 .input-flex {
@@ -45,7 +45,7 @@
   align-items: center;
 }
 
-input {
+.input-flex input {
   border: 1px solid black;
   border-radius: 2px;
   padding: 2%;
@@ -58,40 +58,17 @@ input {
   width: 100%;
 }
 
-#submit-box {
+.submit-box {
   width: 100%;
   text-align: center;
 }
-.checkbox-wrapper {
-  padding: 14px;
-  /* background-color: #FAF9F8; */
-  margin: 10px;
-  border-radius: 3px;
-}
 
-.checkbox {
-  display: flex;
-  align-items: center;
-  font-size: var(--small-font-size);
-}
-
-/* .checkbox input, */
-.checkbox label {
-  color: rgb(48, 48, 202);
-}
-
-#form-submit {
-  background-color: var(--button-background-black);
-  color: white;
-  font-weight: 700;
-}
-
-#form-submit:hover {
+.form-submit:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
-#form-submit:active {
+.form-submit:active {
   transform:scale(1.02);
 }
 
@@ -108,7 +85,7 @@ input {
   padding: 6px;
 }
 
-#form-h3 span,
+.form-h3 span,
 .description-row {
   font-size: var(--small-font-size);
 }
