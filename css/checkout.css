@@ -23,7 +23,15 @@
 .form-div,
 #my-info{
   margin: 0;
-  padding: 1em;
+  padding: 0 1em;
+}
+
+#my-info {
+  padding-top: 1em;
+}
+
+.input-flex {
+  padding-bottom: 1em;
 }
 
 .form-h3 {
@@ -52,7 +60,6 @@
   border: 1px solid black;
   border-radius: 2px;
   padding: 2%;
-  /* margin: 10px; */
   box-sizing: border-box;
   flex-grow: 1;
 }
@@ -63,7 +70,7 @@
 
 
 .checkout-products-wrapper {
-  padding: 1em;
+  padding: 0 1em 1em;
 }
 
 .checkout-products-flexbox {

@@ -232,22 +232,15 @@
         </div>
         <form action="#" method="get">
           <div class="newsletter-flex">
-            <div class="flex-row">
-              <select name="gender" id="gender">
-                <option value="Unknown" id="value-1">Please choose salutation</option>
-                <option value="Female" id="value-2">Ms</option>
-                <option value="Male" id="value-3">Mr</option>
-                <option value="Neutral" id="value-4">Mx</option>
-              </select>
-              <input type="text" name="title" placeholder="Title" />
-            </div>
-            <div class="flex-row">
-              <input type="text" name="first-name" placeholder="First Name*" required />
-              <input type="text" name="last-name" placeholder="Last Name*" required />
-            </div>
+
             <div class="flex-row">
               <input type="email"name="email" placeholder="E-mail*" required />
-              <input type="text" name="company" placeholder="Company" />
+              <select name="gender" id="gender">
+                <option value="Unknown" id="value-1">Choose product category</option>
+                <option value="Female" id="value-2">Women</option>
+                <option value="Male" id="value-3">Men</option>
+                <option value="Children" id="value-4">Children</option>
+              </select>
             </div>
           </div>
             <div class="checkbox">
@@ -270,16 +263,7 @@
               </label>
             </div>
           </div>
-          <div class="checkbox">
-            <div>
-              <input type="checkbox" name="newsletter" />
-            </div>
-            <div>
-              <label for="newsletter">
-                Include me in surveys and feedback requests to help improve your offerings.            
-              </label>
-            </div>
-          </div>
+
           <div class="flex-row">
             <div class="newsletter-submit-box">
               <input type="submit" id="form-submit" value="Send now" />
