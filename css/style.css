@@ -153,12 +153,12 @@ main h2 {
   transform:scale(1.014);
 }
 
-#hero-wrapper {
+.hero-wrapper {
   height: 100vh;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../images/Monika_Jagaciak_women_model-795490.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../images/wallpaper/Monika_Jagaciak_women_model-795490.jpg");
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
