@@ -1,6 +1,4 @@
 //postaviti
-blog.html
-faq.html
 header/sticky 
 header::after
 
@@ -10,6 +8,8 @@ productCard
 
 //doraditi
 index.html
+productCategories.html
+contact.html
 
 //ostalo
 vendor prefix
