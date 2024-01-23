@@ -8,7 +8,7 @@
 </head>
 <body>
   <object>
-    <article>
+    <div class="article">
       <div class="blog-card">
         <div class="blog-img-div">
           <img src="../images/blog/blog.avif" alt="" class="blog-img">
@@ -18,10 +18,15 @@
           Dive into the future with our exclusive coverage of the fashion-tech revolution. Beyond smart fabrics and augmented reality, we unravel the hidden gems propelling the industry into uncharted territories. Get ready to be amazed as we showcase the avant-garde creations reshaping the very fabric of style. Discover the unexpected, embrace the extraordinary, and join us on the front lines of innovation.
         </p>
         <div class="blog-a-div">
-          <a href="">READ MORE</a>
+          <a href="../blogDetail.html" onclick="openInParentParent()">READ MORE</a>
         </div>
       </div>
-    </article>
+    </div>
   </object>
+  <script>
+    function openInParentParent() {
+      window.parent.parent.location.href = '../blogDetail.html';
+}
+  </script>
 </body>
 </html>

@@ -26,8 +26,8 @@ body {
   letter-spacing: .01em;
 }
 
-article {
-  flex: 1;
+.article {
+  flex: 1 1 auto;
 }
 
 .blog-card p,

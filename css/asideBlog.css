@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #blog h3 {
@@ -16,4 +17,9 @@
   display: flex;
   justify-content: center;
   gap: 1em;
+  width: 100%;
+}
+
+article {
+ flex: 1 1 auto;
 }

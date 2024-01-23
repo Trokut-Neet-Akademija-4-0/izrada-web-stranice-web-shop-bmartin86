@@ -1,9 +1,8 @@
 //postaviti
-about.html
 blog.html
-blogDetail.html
 faq.html
-header/sticky
+header/sticky 
+header::after
 
 /partials
 assideProducts (2 liste/ forma - radio,checkbox)
@@ -11,7 +10,6 @@ productCard
 
 //doraditi
 index.html
-
 
 //ostalo
 vendor prefix
