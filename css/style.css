@@ -287,7 +287,7 @@ text-align: center;
 }
 
 /* blog section */
-#blog-section {
+.blog-section {
   width: 90vw;
 }
 
