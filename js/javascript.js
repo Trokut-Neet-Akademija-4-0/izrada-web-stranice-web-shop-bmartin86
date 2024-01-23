@@ -9,6 +9,6 @@
         iframe.style.height = height + 'px';
       };
     }
-    var iframes = document.querySelectorAll('.auto-height-iframe','map-iframe');
+    var iframes = document.querySelectorAll('.auto-height-iframe');
     iframes.forEach(adjustIframeHeight);
   });

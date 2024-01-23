@@ -1,0 +1,19 @@
+@import url('style.css');
+
+#blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#blog h3 {
+  font-size: 2.2em;
+  letter-spacing: .04em;
+}
+
+.blog-flexbox {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}

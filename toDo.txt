@@ -6,9 +6,7 @@ faq.html
 header/sticky
 
 /partials
-assideBlog (about, blogDetail)
 assideProducts (2 liste/ forma - radio,checkbox)
-blogCard
 productCard
 
 //doraditi

@@ -29,3 +29,13 @@
   gap: 1.3em;
 }
 
+.textarea-div {
+  display: flex;
+}
+
+.textarea-div textarea {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  padding: 1em;
+}
+
