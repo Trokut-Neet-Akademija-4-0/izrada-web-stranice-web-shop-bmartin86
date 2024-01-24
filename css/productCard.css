@@ -1,0 +1,62 @@
+@import url('style.css');
+body {
+  overflow: hidden;
+}
+
+.product-card-wrapper {
+  flex: 1 1 auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: .8em;
+  
+}
+
+.product-image {
+  width: 100%;
+  transition: transform .5s;
+}
+
+.product-image:hover {
+  transform:scale(1.014);
+  border-radius: 4px;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: black;
+  /* color: rgb(60, 60, 60); */
+}
+
+.product-name,
+.product-price,
+.product-category {
+  line-height: 20px;
+}
+
+.product-name,
+.product-price {
+  font-size: 13px;
+}
+
+.product-category {
+  font-size: 11px;
+}
+
+.product-name {
+  letter-spacing: .01em;
+  display: inline;
+}
+
+.product-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  /* color: rgb(63, 63, 63); */
+}
+
+.product-price {
+  letter-spacing: .04em;
+}

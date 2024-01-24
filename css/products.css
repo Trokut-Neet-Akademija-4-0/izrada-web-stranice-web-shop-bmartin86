@@ -3,6 +3,7 @@
 #products-main-wrapper {
   display: flex;
   background-color: var(--secondary-background-color);
+  padding-bottom: 10vh;
 }
 
 #products-div {
@@ -10,6 +11,13 @@
   display: flex;
   flex-direction: column;
   padding: 0 1em;
+}
+
+#products-aside {
+  flex: 1;
+  padding-left: 2em;
+  padding-top: .6em;
+  color: rgb(50, 50, 50);
 }
 
 #products-header h1 {
@@ -34,7 +42,11 @@
   grid-gap: .2em;
 }
 
-.product-card {
+article {
+  display: flex;
+}
+
+/* .product-card {
   display: flex;
   flex-direction: column;
 }
@@ -78,7 +90,7 @@
 
 .product-price {
   letter-spacing: .06em;
-}
+} */
 
 /* aside section
 
