@@ -17,7 +17,6 @@
   font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 0;
-  /* font-size: var(--big-font-size); */
 }
 
 #products-header p {
@@ -81,7 +80,7 @@
   letter-spacing: .06em;
 }
 
-/* aside section */
+/* aside section
 
 #products-aside {
   flex: 1;
@@ -120,7 +119,7 @@
 #products-aside a:hover {
   text-decoration: underline;
   color: rgb(223, 23, 23);
-}
+} */
 
 
 
