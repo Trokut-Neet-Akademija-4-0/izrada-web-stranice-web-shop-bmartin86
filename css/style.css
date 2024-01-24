@@ -288,17 +288,20 @@ text-align: center;
 }
 
 /* asideBlog section */
-.asideBlog {
-  width: 80vw;
-  display: flex;
-  justify-content: center;
-  
 
-}
 .blog-section {
+  margin: auto;
   display: flex;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
+  width: 80vw;
+}
+
+.asideBlog {
+  /* width: 80vw; */
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 
 /* newsletter */

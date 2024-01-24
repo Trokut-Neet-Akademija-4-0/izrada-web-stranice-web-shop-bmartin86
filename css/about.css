@@ -3,7 +3,6 @@ main {
   padding-bottom: 10vh;
 }
 
-
 #about-main {
   padding: 2em;
   display: flex;
@@ -85,4 +84,13 @@ main {
 
 .about-article p {
   line-height: 1.5em;
+}
+
+.about-blog-wrapper {
+  margin: 0 8%;
+  background-color: white;
+}
+
+.asideBlog {
+  flex: 1;
 }

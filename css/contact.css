@@ -1,4 +1,7 @@
 @import url('style.css');
+body {
+  background-color: var(--main-background-color);
+}
 
 #contact-main {
   display: grid;
@@ -37,5 +40,14 @@
   box-sizing: border-box;
   flex: 0 0 100%;
   padding: 1em;
+}
+
+.about-blog-wrapper {
+  margin: 10vh 8%;
+  background-color: white;
+}
+
+.asideBlog {
+  flex: 1;
 }
 
