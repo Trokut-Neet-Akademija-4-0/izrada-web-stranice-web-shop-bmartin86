@@ -139,7 +139,7 @@ main h2 {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../images/wallpaper/Monika_Jagaciak_women_model-795490.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../images/wallpaper/Monika_Jagaciak_women_model-795490.jpg");
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,25 +149,33 @@ main h2 {
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 69%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--main-text-color);
 }
 
 .hero-text h1 {
-  letter-spacing: .1em;
+  letter-spacing: .04em;
 }
 
 .hero-text h2 {
-  letter-spacing: .15em;
+  letter-spacing: .1em;
   margin-bottom: 1.2em;
+  font-size: 32px;
+}
+
+.hero-text h5 {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 12px;
+  letter-spacing: .04em;
 }
 
 .hero-text button {
   outline: 0;
   display: inline-block;
-  padding: 1em 2.5em;
+  padding: 1em 3.2em;
   color: var(--main-text-color);
   background-color: rgba(255, 255, 255, 0);
   border: 1.5px solid var(--main-text-color);
@@ -183,7 +191,7 @@ main h2 {
 }
 
 #logo-text {
-  font-size: 15vh;
+  font-size: 13vh;
   margin: 0;
   font-weight: 100;
 }
