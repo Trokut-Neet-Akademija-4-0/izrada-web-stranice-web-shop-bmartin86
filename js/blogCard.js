@@ -11,4 +11,4 @@ function loadBlogCard() {
   xhttp.open("GET", "../partials/blogCard.html");
   xhttp.send();
 }
-loadBlogCard();
+loadBlogCard(); 

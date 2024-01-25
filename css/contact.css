@@ -9,12 +9,18 @@ main {
 
 #contact-main-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
   padding: 2em;
 }
 
 #contact {
-  padding: 3em 1em;
+  padding: 1em;
+  flex: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  overflow-y: auto;
 }
 
 #contact a {
@@ -49,7 +55,6 @@ main {
 .aside-blog-wrapper {
   margin: auto;
   width: 80vw;
-  background-color: white;
   padding: 0 3em 1em;
 }
 

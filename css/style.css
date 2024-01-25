@@ -22,8 +22,6 @@ body * {
   --secondary-background-color : #fff;
   --button-background-black : rgb(19, 19, 19);
   --discount-color-red : rgb(223, 23, 23);
-
-  /* --main-font-size: 1.2rem; */
   --small-font-size: .8em;
   --medium-font-size: 1em;
   --big-font-size: 1.2em
@@ -65,7 +63,6 @@ main {
   height: 100%;
   background-color: var(--main-background-color);
   margin: 0 auto;
-  /* padding-bottom: 3em; */
 }
 
 main h1,
@@ -84,7 +81,7 @@ main h2 {
   margin-bottom: 1em;
 }
 
-#contact ul,
+#contact-main-content ul,
 .contact ul,
 .legal ul {
   list-style: none;
@@ -98,11 +95,6 @@ main h2 {
   padding: 1em 0;
   letter-spacing: .05em;
   font-size: 2em;
-}
-
-.submit-box {
-  width: 100%;
-  text-align: center;
 }
 
 .form-submit:hover {
@@ -173,7 +165,6 @@ main h2 {
 }
 
 .hero-text button {
-  border: none;
   outline: 0;
   display: inline-block;
   padding: 1em 2.5em;
@@ -181,16 +172,14 @@ main h2 {
   background-color: rgba(255, 255, 255, 0);
   border: 1.5px solid var(--main-text-color);
   border-radius: 2px;
-  /* background-color: #ddd; */
   text-align: center;
   cursor: pointer;
-  transition: background-color .1s;
+  transition: background-color .2s, color .2s ;
 }
 
 .hero-text button:hover {
-  background-color: #a9a9a9;
-  /* color: white; */
-  transition: background-color .1s;
+  background-color: var(--main-text-color);
+  color: black;
 }
 
 #logo-text {
@@ -290,25 +279,15 @@ text-align: center;
 
 .blog-section {
   margin: auto;
-  display: flex;
-  justify-content: center;
-  /* width: 100%; */
   width: 80vw;
-}
-
-.asideBlog {
-  /* width: 80vw; */
-  display: flex;
-  justify-content: center;
-  flex: 1;
 }
 
 /* newsletter */
 #newsletter {
   margin: auto;
-  width: 74vw;
+  width: 75vw;
   background-color: var(--secondary-background-color);
-  padding: 1em;
+  padding: 1em 2em;
   margin: 2em 0;
   border-radius: 2px;
 }
@@ -346,7 +325,7 @@ text-align: center;
 
 .newsletter-submit-box {
   margin-top: 10px;
-  width: 25%;
+  width: 26%;
 }
 
 #form-submit {

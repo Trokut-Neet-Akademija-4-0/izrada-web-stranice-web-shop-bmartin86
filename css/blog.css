@@ -31,14 +31,14 @@ main {
   display: flex;
   justify-content: space-around;
   gap: 5vw;
-  padding: 0 10vw;
+  padding: 10vh 10vw;
 }
 
 .blog-left-div {
   flex: 2;
   display: flex;
   flex-direction: column;
-  margin-top: 10vh;
+  
   gap: 1.6em;
 }
 
@@ -87,7 +87,6 @@ article {
   top: 0;
   align-self: flex-start;
   overflow-y: auto;
-  margin-top: 10vh;
 }
 
 #press-contact-container,
@@ -141,4 +140,9 @@ article {
   position: absolute; 
   bottom: -4px; 
   overflow: hidden;
+}
+
+#aside-blog-wrapper {
+  margin: auto;
+  width: 80vw;
 }

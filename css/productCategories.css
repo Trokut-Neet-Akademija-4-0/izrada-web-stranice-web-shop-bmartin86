@@ -1,9 +1,12 @@
 @import url('style.css');
 
+main {
+  padding-bottom: 20vh;
+}
+
 .sidebar-plus-content {
   display: flex;
   padding-left: 2vw;
-  padding-bottom: 200vh;
 }
 
 .hidden-div {
@@ -130,11 +133,10 @@
   border-radius: 2px;
   text-align: center;
   cursor: pointer;
-  transition: background-color .3s, color .3s ;
+  transition: background-color .2s, color .2s ;
 }
 
 .cat-hero-text button:hover {
   background-color: var(--main-text-color);
   color: black;
 }
-

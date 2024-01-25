@@ -1,17 +1,9 @@
 @import url('style.css');
-body {
-  
-}
-
-.product-card-wrapper {
-  flex: 1 1 auto;
-}
 
 .product-card {
   display: flex;
   flex-direction: column;
   gap: .8em;
-  
 }
 
 .product-image {
