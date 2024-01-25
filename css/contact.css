@@ -3,25 +3,29 @@ body {
   background-color: var(--main-background-color);
 }
 
-#contact-main {
+main {
+  padding-bottom: 10vh;
+}
+
+#contact-main-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 2em;
 }
 
-#contact-section {
+#contact {
   padding: 3em 1em;
 }
 
-#contact-section a {
+#contact a {
   color: black;
 }
 
-#contact-section a:hover {
+#contact a:hover {
   text-decoration: none;
 }
 
-#contact-section li {
+#contact li {
   margin-top: .9em;
   font-size: var(--medium-font-size);
 }
@@ -42,12 +46,12 @@ body {
   padding: 1em;
 }
 
-.about-blog-wrapper {
-  margin: 10vh 8%;
+.aside-blog-wrapper {
+  margin: auto;
+  width: 80vw;
   background-color: white;
+  padding: 0 3em 1em;
 }
 
-.asideBlog {
-  flex: 1;
-}
+
 

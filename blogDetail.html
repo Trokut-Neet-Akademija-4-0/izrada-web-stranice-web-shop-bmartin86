@@ -7,21 +7,19 @@
   <link rel="stylesheet" href="css/blogDetail.css">
 </head>
 <body>
-  <header>
-    <iframe src="partials/header.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </header>
+  <header id="header"></header>
   <main>
     <section>
       <div class="blog-main-flexbox">
         <div class="blog-main-left"></div>
 
-        <article>
+        <article id="main-blog-content">
           <h1>Unveiling the Unseen: The Fashion-Tech Revolution</h1>
           <div class="blog-header">
-            <p>
+            <p id="blog-header-intro">
               Fashion and technology converge in an unprecedented dance, birthing a revolution that transcends the conventional boundaries of style. "Unveiling the Unseen: The Fashion-Tech Revolution" takes you on an exclusive journey through the technological marvels reshaping the landscape of contemporary fashion.
             </p>
-            <div>4 JAN 2024 16:00 CET</div>
+            <p id="timestamp">4 JAN 2024 16:00 CET</p>
           </div>
   
           <div class="img-div">
@@ -82,18 +80,15 @@
           </div>
         </div>
       </div>
-    
-<!-- asideBlog -->
-    <div class="blog-section">
-      <div class="asideBlog">
-          <iframe src="partials/asideBlog.html" width="100%" class="auto-height-iframe" frameborder="0" name="test"></iframe>
-      </div>
-    </div">
+    </section>
+
+    <!-- aside blog -->
+    <section id="aside-blog-section">
+      <aside id="asideBlog"></aside>        
+    </section>
 
   </main>
-  <footer>
-    <iframe src="partials/footer.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </footer>
+  <footer id="footer"></footer>
   <script src="js/javascript.js"></script>
 </body>
 </html>

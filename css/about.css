@@ -91,6 +91,7 @@ main {
   background-color: white;
 }
 
-.asideBlog {
-  flex: 1;
+#aside-blog-wrapper {
+  margin: auto;
+  width: 80vw;
 }

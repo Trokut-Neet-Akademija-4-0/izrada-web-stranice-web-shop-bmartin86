@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="css/blog.css">
 </head>
 <body>
-  <header>
-    <iframe src="partials/header.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </header>
+  <header id="header"></header>
   <main>
     <div class="blog-banner-wrapper">
       <div class="blog-banner">
@@ -22,36 +20,28 @@
       <div class="blog-left-div">
         <h2>Latest news</h2>
 
-        <article>
-          <iframe src="/partials/blogCardLandscape.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+        <article class="blogCardLandscape">
         </article>
 
-        <article>
-          <iframe src="/partials/blogCardLandscape.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+        <article class="blogCardLandscape">
         </article>
 
-        <article>
-          <iframe src="/partials/blogCardLandscape.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+        <article class="blogCardLandscape">
         </article>
 
-        <article>
-          <iframe src="/partials/blogCardLandscape.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+        <article class="blogCardLandscape">
         </article>
 
-        <article>
-          <iframe src="/partials/blogCardLandscape.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+        <article class="blogCardLandscape">
         </article>
 
-        <article>
-          <iframe src="/partials/blogCardLandscape.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+        <article class="blogCardLandscape">
         </article>
 
-        <article>
-          <iframe src="/partials/blogCardLandscape.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+        <article class="blogCardLandscape">
         </article>
 
-        <article>
-          <iframe src="/partials/blogCardLandscape.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+        <article class="blogCardLandscape">
         </article>
 
         <div id="paginate">
@@ -64,6 +54,8 @@
           <div><a href="#paginate">7</a></div>
         </div>
       </div>
+      
+      <!-- desni aside -->
       <div class="blog-right-div">
         <h2>Press Contact</h2>
         <article id="press-contact-container">
@@ -77,7 +69,7 @@
                 Head of Corporate Communications
               </div>
               <div class="profile-contact">
-                <a href="new.style@info.org">WRITE A MAIL</a>
+                <a href="mailto:new.style@info.org" target="_blank">WRITE A MAIL</a>
               </div>
             </div>
           </div>
@@ -92,7 +84,7 @@
                 Head of Consumer Communications
               </div>
               <div class="profile-contact">
-                <a href="new.style@info.org">WRITE A MAIL</a>
+                <a href="mailto:new.style@info.org" target="_blank">WRITE A MAIL</a>
               </div>
             </div>
           </div>
@@ -100,11 +92,8 @@
         
       </div>
     </div>
-
   </main>
-  <footer>
-    <iframe src="partials/footer.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </footer>
+  <footer id="footer"></footer>
   <script src="js/javascript.js"></script>
 </body>
 </html>

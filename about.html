@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" href="css/about.css">
+  <script src="js/blogCard.js"></script>
 </head>
 <body>
-  <header>
-    <iframe src="partials/header.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </header>
+  <header id="header"></header>
   <main>
     <div id="about-main">
       <section class="about-hero-wrapper">
@@ -63,19 +62,14 @@
       </section>
     </div>
 
-    <!-- asideBlog -->
-    <div class="about-blog-wrapper">
-      <div class="blog-section">
-        <section class="asideBlog">
-            <iframe src="partials/asideBlog.html" width="100%" class="auto-height-iframe" frameborder="0" name="test"></iframe>
-        </section>
-      </div>
-    </div>
+    <!-- aside blog -->
+    <section id="aside-blog-wrapper">
+      <aside id="asideBlog"></aside>
+    </section>
+    
   </main>
+  <footer id="footer"></footer>
   
-  <footer>
-    <iframe src="partials/footer.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </footer>
   <script src="js/javascript.js"></script>
 </body>
 </html>

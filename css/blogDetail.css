@@ -18,7 +18,7 @@ section {
   flex: 1;
 }
 
-article {
+#main-blog-content {
   flex: 4;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@ article h1 {
   color: rgb(41, 41, 41);
 }
 
-.blog-header p {
+#blog-header-intro {
   line-height: 2.2rem;
   font-size: 1.6em;
   letter-spacing: .02em;
@@ -129,4 +129,9 @@ article h1 {
 .blog-text-author {
   float: right;
   font-size: var(--small-font-size);
+}
+
+#aside-blog-section {
+  margin: auto;
+  width: 80vw;
 }

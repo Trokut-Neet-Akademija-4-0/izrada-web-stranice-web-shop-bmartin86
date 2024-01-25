@@ -3,7 +3,6 @@ header/sticky
 
 /partials
 assideProducts (2 liste/ forma - radio,checkbox)
-productCard
 
 //doraditi
 index.html

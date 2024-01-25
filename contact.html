@@ -7,123 +7,119 @@
   <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-  <header>
-    <iframe src="partials/header.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </header>
-  <main id="contact-main">
-    <section id="contact-section">
-      <h2>CONTACT US</h2>
-      <ul>
-          <li>+385(0)22/ 123-4567</li>
-          <li>new.style@info.org</li>
-          <li>123 Street, City, Country</li>
-          <li>
-            <div class="contact-social-links">
-              <a href="https://web.facebook.com/" target="_blank">
-              <img src="images/icons/facebook-f-black.svg" alt="facebook">
-              </a>
-              <a href="https://www.instagram.com/" target="_blank">
-              <img src="images/icons/instagram-black.svg" alt="instagram">
-              </a>
-              <a href="https://www.tiktok.com" target="_blank">
-              <img src="images/icons/tiktok-black.svg" alt="tiktok">
-              </a>
-              <a href="https://www.linkedin.com" target="_blank">
-              <img src="images/icons/linkedin-in-black.svg" alt="linkedin">
-              </a>
-              <a href="https://www.twitter.com" target="_blank">
-              <img src="images/icons/twitter-black.svg" alt="twitter">
-              </a>
-          </div>
-          </li>
-      </ul>
-    </section>
+  <header id="header"></header>
+  <main>
+    <div id="contact-main-content">
+      <section id="contact">
+        <h2>CONTACT US</h2>
+        <ul>
+            <li>+385(0)22/ 123-4567</li>
+            <li>new.style@info.org</li>
+            <li>123 Street, City, Country</li>
+            <li>
+              <div class="contact-social-links">
+                <a href="https://web.facebook.com/" target="_blank">
+                <img src="images/icons/facebook-f-black.svg" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/icons/instagram-black.svg" alt="instagram">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                <img src="images/icons/tiktok-black.svg" alt="tiktok">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                <img src="images/icons/linkedin-in-black.svg" alt="linkedin">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                <img src="images/icons/twitter-black.svg" alt="twitter">
+                </a>
+            </div>
+            </li>
+        </ul>
+      </section>
 
-    <section id="newsletter">
-      <div class="flex-row h2">
-        <h2 id="newsletter-title">SEND US A MESSAGE</h2>
-      </div>
-      <div class="flex-row h3">
-        <h3 id="newsletter-title">Please insert Your informations below</h3>
-      </div>
-      <form action="#" method="get">
-        <div class="newsletter-flex">
-          <div class="flex-row">
-            <select name="gender" id="gender">
-              <option value="Unknown" id="value-1">Please choose salutation</option>
-              <option value="Female" id="value-2">Ms</option>
-              <option value="Male" id="value-3">Mr</option>
-              <option value="Neutral" id="value-4">Mx</option>
-            </select>
-            <input type="text" name="title" placeholder="Title" />
-          </div>
-          <div class="flex-row">
-            <input type="text" name="first-name" placeholder="First Name*" required />
-            <input type="text" name="last-name" placeholder="Last Name*" required />
-          </div>
-          <div class="flex-row">
-            <input type="email"name="email" placeholder="E-mail*" required />
-            <input type="text" name="company" placeholder="Company" />
-          </div>
-          <div class="textarea-div">
-            <textarea name="message" id="" cols="30" rows="7">Your message here...</textarea>
-          </div>
+      <section id="newsletter">
+        <div class="flex-row h2">
+          <h2 id="newsletter-title">SEND US A MESSAGE</h2>
         </div>
+        <div class="flex-row h3">
+          <h3 id="newsletter-title">Please insert Your informations below</h3>
+        </div>
+        <form action="#" method="get">
+          <div class="newsletter-flex">
+            <div class="flex-row">
+              <select name="gender" id="gender">
+                <option value="Unknown" id="value-1">Please choose salutation</option>
+                <option value="Female" id="value-2">Ms</option>
+                <option value="Male" id="value-3">Mr</option>
+                <option value="Neutral" id="value-4">Mx</option>
+              </select>
+              <input type="text" name="title" placeholder="Title" />
+            </div>
+            <div class="flex-row">
+              <input type="text" name="first-name" placeholder="First Name*" required />
+              <input type="text" name="last-name" placeholder="Last Name*" required />
+            </div>
+            <div class="flex-row">
+              <input type="email"name="email" placeholder="E-mail*" required />
+              <input type="text" name="company" placeholder="Company" />
+            </div>
+            <div class="textarea-div">
+              <textarea name="message" id="" cols="30" rows="7">Your message here...</textarea>
+            </div>
+          </div>
+            <div class="checkbox">
+            <div>
+              <input type="checkbox" required name="required-checkbox" />
+            </div>
+            <div>
+              <label for="required-checkbox">
+                I accept the collection and processing of personal data provided in the form, without which my request cannot be fulfilled, and allow New Style to contact me for the purpose of sending notifications. *
+              </label>
+            </div>
+          </div>
           <div class="checkbox">
-          <div>
-            <input type="checkbox" required name="required-checkbox" />
+            <div>
+              <input type="checkbox" name="newsletter" />
+            </div>
+            <div>
+              <label for="newsletter">
+                Send me exclusive offers and discounts tailored to my preferences.             
+              </label>
+            </div>
           </div>
-          <div>
-            <label for="required-checkbox">
-              I accept the collection and processing of personal data provided in the form, without which my request cannot be fulfilled, and allow New Style to contact me for the purpose of sending notifications. *
-            </label>
+          <div class="checkbox">
+            <div>
+              <input type="checkbox" name="newsletter" />
+            </div>
+            <div>
+              <label for="newsletter">
+                Subscribe me to the newsletter.         
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="checkbox">
-          <div>
-            <input type="checkbox" name="newsletter" />
+          <div class="flex-row">
+            <div class="newsletter-submit-box">
+              <input type="submit" id="form-submit" value="Send now" />
+            </div>
           </div>
-          <div>
-            <label for="newsletter">
-              Send me exclusive offers and discounts tailored to my preferences.             
-            </label>
+          <div class="flex-row">
+          <div class="checkbox checkbox-info">
+            Fields marked with an (*) are required information.
           </div>
-        </div>
-        <div class="checkbox">
-          <div>
-            <input type="checkbox" name="newsletter" />
-          </div>
-          <div>
-            <label for="newsletter">
-              Subscribe me to the newsletter.         
-            </label>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="newsletter-submit-box">
-            <input type="submit" id="form-submit" value="Send now" />
-          </div>
-        </div>
-        <div class="flex-row">
-        <div class="checkbox checkbox-info">
-          Fields marked with an (*) are required information.
-        </div>
-      </form>
-    </section>
-  </main>
-
-  <!-- asideBlog -->
-  <div class="about-blog-wrapper">
-    <div class="blog-section">
-      <section class="asideBlog">
-          <iframe src="partials/asideBlog.html" width="100%" class="auto-height-iframe" frameborder="0" name="test"></iframe>
+        </form>
       </section>
     </div>
-  </div>
+  
 
-  <footer>
-    <iframe src="partials/footer.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </footer>
+    <!-- asideBlog -->
+    <div class="aside-blog-wrapper">
+        <aside id="asideBlog"></aside>
+    </div>
+  
+  </main>
+  <footer id="footer"></footer>
+  <script src="js/blogCard.js"></script>
   <script src="js/javascript.js"></script>
 </body>
 </html>

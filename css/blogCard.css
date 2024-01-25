@@ -1,9 +1,6 @@
 @import url('style.css');
 
-body {
-  overflow: hidden;
-}
-.blog-card {
+.blog-card-div {
   display: flex;
   flex-direction: column;
 }
@@ -19,30 +16,26 @@ body {
   line-height: 1.3em;
 }
 
-.blog-card p {
+.blog-card-div p {
   font-size: .9em;
   line-height: 1.4em;
   margin: 0;
   letter-spacing: .01em;
 }
 
-.article {
-  flex: 1 1 auto;
-}
-
-.blog-card p,
-.blog-card a {
+.blog-card-div p,
+.blog-card-div a {
   color: var(--dark-text-color);
 }
 
-.blog-card a {
+.blog-card-div a {
   letter-spacing: .15em;
   line-height: 1.8em;
   text-decoration: none;
   position: relative;
 }
 
-.blog-card a::after {
+.blog-card-div a::after {
   content: '-'; 
   display: block; 
   width: 100%; 

@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <iframe src="partials/header.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </header>
+  <header id="header"></header>
+  
   <main>
+    <!-- index hero -->
     <section class="hero-wrapper">
       <div class="hero-image">
         <div class="hero-text">
@@ -24,6 +24,7 @@
       </div>
     </section>
 
+    <!-- new collection -->
     <div class="main-wrapper">
       <section class="products-section">
         <h2>NEW COLLECTION</h2>
@@ -51,6 +52,7 @@
         </div>
       </section>
 
+      <!-- index-categories -->
       <section class="index-categories-section">
         <h2>POPULAR CATEGORIES</h2>
         <div class="index-categories-outer-div">
@@ -168,13 +170,14 @@
         </div>
       </section>
 
-<!-- asideBlog -->
-      <aside class="asideBlog">
-        <section class="blog-section">
-            <iframe src="partials/asideBlog.html" width="100%" class="auto-height-iframe" frameborder="0" name="test"></iframe>
-        </section>
-      </aside>
+      <!-- asideBlog -->
+      <div class="blog-section">
+        <aside id="asideBlog"></aside>
+      </div>
+      
 
+
+      <!-- newsletter -->
       <section id="newsletter">
         <div class="flex-row">
           <h2 id="newsletter-title">SUBSCRIBE for the NEWSLETTER</h2>
@@ -226,11 +229,12 @@
           </div>
         </form>
       </section>
+
     </div>
   </main>
-  <footer>
-    <iframe src="partials/footer.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
-  </footer>
+
+  <footer id="footer"></footer>
+  <script src="js/blogCard.js"></script>
   <script src="js/javascript.js"></script>
 </body>
 </html>

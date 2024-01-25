@@ -1,8 +1,5 @@
 @import url('style.css');
 
-body {
-  overflow: hidden;
-}
 .blog-card {
   display: flex;
   align-items: center;
