@@ -64,6 +64,30 @@
   loadBlogCardLandscape();
 
 
+  //load productListCard
+  function loadProductListCard() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      document.getElementById("productListCard").innerHTML = this.responseText;
+    }
+    xhttp.open ("GET", "../partials/productListCard.html");
+    xhttp.send();
+  }
+  loadProductListCard();
+
+
+  //load asideProducts
+  function loadAsideProducts() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      document.getElementById("asideProducts").innerHTML = this.responseText;
+    }
+    xhttp.open ("GET", "../partials/asideProducts.html");
+    xhttp.send();
+  }
+  loadAsideProducts();
+
+
   //load asideBlog
   function loadAsideBlog() {
     loadBlogCard();

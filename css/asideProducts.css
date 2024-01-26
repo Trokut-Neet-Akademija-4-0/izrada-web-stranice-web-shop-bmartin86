@@ -1,1 +1,49 @@
 @import url(style.css);
+
+/* aside filters */
+#products-aside {
+  align-self: flex-start;
+  flex: 1;
+  padding: 2.4em 1em;
+  color: rgb(0, 0, 0);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+#products-aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-group {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.filter-group li {
+  font-size: 14px !important;
+  font-weight: 400 !important; 
+  margin-top: 8px;
+}
+
+.filter-submit-button {
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0);
+  padding: .6em 1.4em;
+  letter-spacing: .03em;
+  transition: background-color .12s, color .12s, transform;
+}
+
+.filter-submit-button:hover {
+  background-color: rgb(29, 29, 29);
+  color: var(--main-background-color);
+  cursor: pointer;
+}
+
+.filter-submit-button:active {
+  transform:scale(1.014);
+}

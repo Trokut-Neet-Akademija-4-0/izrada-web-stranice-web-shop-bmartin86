@@ -13,18 +13,13 @@
   padding: 0 1em;
 }
 
-#products-aside {
-  flex: 1;
-  padding-left: 2em;
-  padding-top: .6em;
-  color: rgb(50, 50, 50);
-}
-
-#products-header h1 {
-  letter-spacing: .04em;
-  font-size: 2.6rem;
+#products-header h3 {
+  letter-spacing: .05em;
+  font-size: 40px;
+  line-height: 48px;
   font-weight: 700;
-  margin-bottom: 0;
+  margin: 0;
+  padding-top: 32px;
 }
 
 #products-header p {
@@ -42,3 +37,5 @@
   grid-column-gap: .3em;
   grid-row-gap: 1.4em;
 }
+
+

@@ -24,7 +24,9 @@ body * {
   --discount-color-red : rgb(223, 23, 23);
   --small-font-size: .8em;
   --medium-font-size: 1em;
-  --big-font-size: 1.2em
+  --big-font-size: 1.2em;
+  --productListCard-background-color: rgb(249,247,247);
+  background: linear-gradient(180deg, rgba(249,247,247,1) 0%, rgba(255,255,255,1) 50%, rgba(249,247,247,1) 100%);
 }
 
 /* opći stilovi */
@@ -63,6 +65,13 @@ main {
   height: 100%;
   background-color: var(--main-background-color);
   margin: 0 auto;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 
 main h1,
@@ -134,6 +143,7 @@ main h2 {
   transform:scale(1.014);
 }
 
+/* main hero section */
 .hero-wrapper {
   height: 100vh;
 }
@@ -196,12 +206,6 @@ main h2 {
   font-weight: 100;
 }
 
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
-}
 
 /* products section */
 .products-section {
@@ -231,60 +235,31 @@ main h2 {
 }
 
 /* categories section */
-.index-categories-section {
-  width: 90%;
-  background-color: #fff;
-}
 
-.index-categories-section h2 {
-  margin-bottom: 0;
-}
-
-.index-categories-outer-div {
-  display: flex;
-  gap: .2em;
-  background-color: var(--main-background-color);
-  padding: 10px;
-  margin-top: 8px;
-  box-shadow: 0px 1px 10px gray;
-}
-
-.index-category-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 12.5%;
-}
-
-.index-category-image {
+#productListCard {
+  margin: auto;
   width: 100%;
 }
 
-.index-category-description {
-text-align: center;
+#product-list-card-outer {
+  width: 100%;
+  position: relative;
+  padding: 5em;
 }
 
-.index-category-description a{
-  text-decoration: none;
-  color: gray;
-}
-
-.index-category-description a:nth-child(1) {
+#product-list-card-outer::before {
+  content: "POPULAR SELECTIONS";
+  font-size: 32px;
+  line-height: 50px;
   font-weight: 700;
+  position: absolute;
+  left: 10%; 
+  top: 7%; /* Center vertically */
+  transform: translate(0%, 0%); 
 }
 
-.index-category-description a:nth-child(2) {
-  font-weight: 300;
-  font-size: var(--small-font-size);
-}
-
-.index-category-description p {
-  margin: 0;
-}
 
 /* asideBlog section */
-
 .blog-section {
   margin: auto;
   width: 80vw;

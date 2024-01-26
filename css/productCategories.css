@@ -1,12 +1,9 @@
 @import url('style.css');
 
-main {
-  padding-bottom: 20vh;
-}
-
 .sidebar-plus-content {
   display: flex;
   padding-left: 2vw;
+  padding-bottom: 20vh;
 }
 
 .hidden-div {
@@ -54,7 +51,7 @@ main {
 }
 
 #products-aside a {
-  font-size: var(--medium-font-size);
+  font-size: var(--small-font-size);
   letter-spacing: .015em;
   text-decoration: none;
 }
@@ -70,16 +67,28 @@ main {
   letter-spacing: .02em;
 }
 
+/* product list card */
+#productListCard-article {
+  margin-bottom: 3em;
+}
+
 
 /* categories section */
 #categories-wrapper {
   flex: 3;
 }
 
+.category-title {
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+  padding: .65em 0;
+}
+
 #categories-content {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1em;
 }
 
 .cat-hero-wrapper {
@@ -91,6 +100,10 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.cat-hero-wrapper {
+  margin-bottom: .8em;
 }
 
 .cat-hero-wrapper:nth-of-type(1) .cat-hero-image {
@@ -139,4 +152,18 @@ main {
 .cat-hero-text button:hover {
   background-color: var(--main-text-color);
   color: black;
+}
+
+#page-description h3 {
+  font-size: 34px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  padding: 12px 0;
+  letter-spacing: 2px;
+}
+
+#page-description p {
+  font-size: 13px;
+  line-height: 20px;
 }

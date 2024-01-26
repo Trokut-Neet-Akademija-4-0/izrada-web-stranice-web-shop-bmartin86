@@ -1,12 +1,8 @@
 //postaviti
 header/sticky 
 
-/partials
-assideProducts (2 liste/ forma - radio,checkbox)
-
 //doraditi
 index.html
-productCategories.html
 footer.html
 
 //ostalo

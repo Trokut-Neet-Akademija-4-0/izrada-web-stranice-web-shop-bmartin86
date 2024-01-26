@@ -4,10 +4,29 @@ main {
 }
 
 #about-main {
-  padding: 2em;
+  padding: 2em 4em;
   display: flex;
   flex-direction: column;
   gap: 10vh;
+}
+
+.about-title {
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: .16px;
+  text-align: center;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 0;
+}
+
+.about-title::before
+ {
+  content: "\007E" "\0020";
+}
+
+.about-title::after {
+  content: "\0020" "\007E";
 }
 
 .about-hero-wrapper {
@@ -32,17 +51,17 @@ main {
 }
 
 .about-hero-image:nth-of-type(1) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("/images/wallpaper/about-1.avif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/images/wallpaper/about-1.avif");
   background-position-y: bottom;
 }
 
 .about-hero-image:nth-of-type(2){
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/wallpaper/store-1.jpg"); 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/images/wallpaper/store-1.jpg"); 
   background-position: center;
 }
 
 .about-hero-image-3{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/wallpaper/store-2.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/images/wallpaper/store-2.webp");
   flex: 2;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +71,7 @@ main {
 }
 
 .about-hero-image-4{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/wallpaper/about-2.avif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/images/wallpaper/about-2.avif");
   flex: 2;
   background-repeat: no-repeat;
   background-size: cover;
