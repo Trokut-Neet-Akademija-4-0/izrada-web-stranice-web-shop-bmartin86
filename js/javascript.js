@@ -11,94 +11,108 @@
 
 
   //loadProductCard
-  function loadProductCard() {
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-      // Get all elements with the class 'productCard'
-      const productCards = document.getElementsByClassName("productCard");
-  
-      // Iterate through the elements and update their content
-      for (let i = 0; i < productCards.length; i++) {
-        productCards[i].innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "../partials/productCard.html");
-    xhttp.send();
+  if (document.getElementsByClassName("productCard")) {
+    function loadProductCard() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function () {
+        // Get all elements with the class 'productCard'
+        const productCards = document.getElementsByClassName("productCard");
+    
+        // Iterate through the elements and update their content
+        for (let i = 0; i < productCards.length; i++) {
+          productCards[i].innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "../partials/productCard.html");
+      xhttp.send();
+    }
+    loadProductCard();
   }
-  loadProductCard();
-
 
 
   //loadBlogCard
-  function loadBlogCard() {
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-      // Get all elements with the class 'blogCard'
-      const blogCards = document.getElementsByClassName("blogCard")
-      // Iterate through the elements and update their content
-      for (let i = 0; i < blogCards.length; i++) {
-        blogCards[i].innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "../partials/blogCard.html");
-    xhttp.send();
+  if (document.getElementsByClassName("blogCard")) {
+    function loadBlogCard() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function () {
+       
+        // Get all elements with the class 'blogCard'
+        const blogCards = document.getElementsByClassName("blogCard");
+        // Iterate through the elements and update their content
+        for (let i = 0; i < blogCards.length; i++) {
+          
+          blogCards[i].innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "../partials/blogCard.html");
+      xhttp.send();
+    }
   }
-  loadBlogCard();
 
 
   //loadBlogCardLandscape
-  function loadBlogCardLandscape() {
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-      // Get all elements with the class 'blogCardLandscape'
-      const blogCardLandscape = document.getElementsByClassName("blogCardLandscape");
-  
-      // Iterate through the elements and update their content
-      for (let i = 0; i < blogCardLandscape.length; i++) {
-        blogCardLandscape[i].innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "../partials/blogCardLandscape.html");
-    xhttp.send();
+  if ( document.getElementsByClassName("blogCardLandscape")) {
+    function loadBlogCardLandscape() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function () {
+        // Get all elements with the class 'blogCardLandscape'
+        const blogCardLandscape = document.getElementsByClassName("blogCardLandscape");
+    
+        // Iterate through the elements and update their content
+        for (let i = 0; i < blogCardLandscape.length; i++) {
+          blogCardLandscape[i].innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "../partials/blogCardLandscape.html");
+      xhttp.send();
+    }
+    loadBlogCardLandscape();
   }
-  loadBlogCardLandscape();
+
 
 
   //load productListCard
-  function loadProductListCard() {
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-      document.getElementById("productListCard").innerHTML = this.responseText;
+  if (document.getElementById("productListCard")) {
+    function loadProductListCard() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function () {
+        document.getElementById("productListCard").innerHTML = this.responseText;
+      }
+      xhttp.open ("GET", "../partials/productListCard.html");
+      xhttp.send();
     }
-    xhttp.open ("GET", "../partials/productListCard.html");
-    xhttp.send();
+    loadProductListCard();
   }
-  loadProductListCard();
 
+  
 
   //load asideProducts
-  function loadAsideProducts() {
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-      document.getElementById("asideProducts").innerHTML = this.responseText;
+  if(document.getElementById("asideProducts")) {
+    function loadAsideProducts() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function () {
+        document.getElementById("asideProducts").innerHTML = this.responseText;
+      }
+      xhttp.open ("GET", "../partials/asideProducts.html");
+      xhttp.send();
     }
-    xhttp.open ("GET", "../partials/asideProducts.html");
-    xhttp.send();
+    loadAsideProducts();  
   }
-  loadAsideProducts();
-
+ 
 
   //load asideBlog
-  function loadAsideBlog() {
-    loadBlogCard();
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-      document.getElementById("asideBlog").innerHTML = this.responseText;
+  if(document.getElementById("asideBlog")) {
+    function loadAsideBlog() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function () {
+        document.getElementById("asideBlog").innerHTML = this.responseText;
+        loadBlogCard();
+      }
+      xhttp.open ("GET", "../partials/asideBlog.html");
+      xhttp.send();
     }
-    xhttp.open ("GET", "../partials/asideBlog.html");
-    xhttp.send();
+    loadAsideBlog();
   }
-  loadAsideBlog();
 
 
   //load footer

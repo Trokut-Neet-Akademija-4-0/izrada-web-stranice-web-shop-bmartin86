@@ -165,7 +165,10 @@ main h2 {
   color: var(--main-text-color);
 }
 
-.hero-text h1 {
+#logo-text {
+  font-size: 13vh;
+  margin: 0;
+  font-weight: 100;
   letter-spacing: .04em;
 }
 
@@ -198,12 +201,6 @@ main h2 {
 .hero-text button:hover {
   background-color: var(--main-text-color);
   color: black;
-}
-
-#logo-text {
-  font-size: 13vh;
-  margin: 0;
-  font-weight: 100;
 }
 
 
