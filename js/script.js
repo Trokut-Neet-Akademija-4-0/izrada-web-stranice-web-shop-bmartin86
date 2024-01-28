@@ -5,7 +5,7 @@ window.onscroll = function () {
    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById("wrapper").style.top = "0";
    } else {
-    document.getElementById("wrapper").style.top = "-128px";
+    document.getElementById("wrapper").style.top = "-135px";
    }
  };
  window.onload = function() {

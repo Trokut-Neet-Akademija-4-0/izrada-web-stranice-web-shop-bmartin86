@@ -1,5 +1,9 @@
 //postaviti
 *media querry responsiveness
+cookie pop-up
+opise na linkove:hover
+products dropdown aside
+productCard icon button
 
 //doraditi
 index.html

@@ -112,12 +112,8 @@ article h1 {
   box-sizing: border-box;
 }
 
-/* .article-main-text div {
-  padding: .7em 0;
-} */
-
 .article-main-text div:first-of-type::first-letter {
-  font-size: 2em;
+  font-size: 27px;
 }
 
 .article-main-text div:first-of-type,
