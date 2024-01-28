@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1em;
+  padding-top: 0;
 }
 
 .contact-info,
@@ -15,15 +15,26 @@
   width: 50%;
 }
 .search-cart {
+  flex: 1;
   justify-content: flex-end;
+}
+
+.contact-info {
+  flex: 1;
 }
 
 .contact-info a,
 .search-cart a {
   text-decoration: none;
   margin-right: 1em;
-  /* color: black; */
   color: var(--main-text-color);
+  transition: transform .3s smooth;
+}
+
+.contact-info a img:hover,
+.search-cart a img:hover {
+  transform:scale(1.15);
+  cursor: pointer;
 }
 
 .search-cart input {
@@ -45,13 +56,22 @@
   height: 1em;
 }
 
- .logo-box h1 {
+ .logo-box  {
+  flex: 2;
   display: flex;
   justify-content: center;
-  font-family: var(--header-font);
-  font-size: 3.6rem;
   margin: 0;
-  font-weight: 100;
+}
+
+.logo-box a {
+  text-decoration: none;
   color: var(--main-text-color);
+  font-size: 3.5rem;
+  font-weight: 100;
+  font-family: var(--header-font);
+}
+
+.logo-box a:hover {
+  cursor: pointer;
 }
 

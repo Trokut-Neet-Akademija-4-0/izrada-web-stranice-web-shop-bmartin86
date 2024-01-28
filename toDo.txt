@@ -1,5 +1,5 @@
 //postaviti
-header/sticky 
+*media querry responsiveness
 
 //doraditi
 index.html
@@ -8,7 +8,5 @@ footer.html
 //ostalo
 vendor prefix
 img optimization, alt=""
-
-*media querry responsiveness
 *SEO optimization
 

@@ -9,14 +9,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header id="header"></header>
-  
-  <main>
+  <div id="wrapper">
+    <header id="header"></header>
+  </div>
+  <main id="main">
+
     <!-- index hero -->
+    <section class="video-hero-wrapper">
+      <video id="hero-video" style="height: 100%; " autoplay loop muted>
+        <source src="/images/video/thefashion.mp4" type="video/mp4">
+      </video>
+      <div class="video-hero-text">
+        <div class="logo-text">new style</div>
+        <h2>AUTUMN-WINTER 2023/2024 IS HERE</h2>
+        <!-- <h5>Explore new collection</h5>
+        <a href="products.html">
+        <button>ONLINE SHOP</button>
+        </a> -->
+      </div>
+      <div class="overlay"></div>
+    </section>
+
     <section class="hero-wrapper">
       <div class="hero-image">
         <div class="hero-text">
-          <div id="logo-text">new style</div>
+          <div class="logo-text">new style</div>
           <h2>AUTUMN-WINTER 2023/2024 IS HERE</h2>
           <h5>Explore new collection</h5>
           <a href="products.html">
@@ -121,7 +138,8 @@
   </main>
 
   <footer id="footer"></footer>
-  
+
+  <script src="js/script.js"></script>
   <script src="js/javascript.js"></script>
 </body>
 </html>
