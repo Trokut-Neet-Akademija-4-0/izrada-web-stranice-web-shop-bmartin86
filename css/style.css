@@ -21,6 +21,8 @@ body * {
   --big-font-size: 1.2em;
   --productListCard-background-color: rgb(249,247,247);
   background: linear-gradient(180deg, rgba(249,247,247,1) 0%, rgba(255,255,255,1) 50%, rgba(249,247,247,1) 100%);
+
+  accent-color: black;
 }
 
 /* opći stilovi */
@@ -77,12 +79,6 @@ main {
   margin: 0 auto;
 }
 
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
-}
 
 main h1,
 main h2 {
@@ -160,29 +156,67 @@ main h2 {
   left: 0;
   width: 100%;
   height: 100%;
-    background: rgba(0, 0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.4) 55%, 
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.2) 50%, 
   rgba(0, 0, 0, 0) 100%);
   z-index: 1;
 }
 
 .video-hero-wrapper {
   position: relative;
-  overflow: auto;
+  /* overflow: auto; */
+  /* height: 100%;
+  width: 100%; */
 }
 
 #hero-video {
   object-fit: cover;
   width: 100%;
+  height: 100%;
+  border-bottom: 2px solid black;
+}
+
+.index-h1{
+  text-align: center;
+  padding: 0 9vw;
+  display: flex;
+  margin: 5vh 0;
+}
+
+.index-h1 h1 {
+  margin: 0;
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  padding: 0 15px;
+}
+
+.line-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-div,
+.line-div div {
+  flex: 1 1 auto;
+}
+
+.line-inner-div {
+  border-bottom: 2px solid black;
 }
 
 .hero-wrapper {
-  height: 100vh;
+  height: calc(100vh - 135px);
+  margin: 0 9vw;
+  border-top: 1.5px solid rgb(60, 60, 60);
+  border-bottom: 1.5px solid rgb(60, 60, 60);
 }
 
 .hero-image {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0,0,0,0.5) 100%), url("../images/wallpaper/Monika_Jagaciak_women_model-795490.jpg");
-  height: calc(100vh - 135px);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0,0,0,0.5) 100%), url("../images/wallpaper/Monika_Jagaciak_women_model-795490.jpg");
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -198,13 +232,13 @@ main h2 {
 }
 
 .video-hero-text {
-  top: 55%;
+  top: 50%;
   z-index: 2;
 }
 
 .hero-text {
   top: 69%;
-
+  width: 100%;
 }
 
 .logo-text {
@@ -213,6 +247,7 @@ main h2 {
   font-weight: 300;
   letter-spacing: 4px;
   word-spacing: 8px;
+  font-family: var(--header-font);
 }
 
 .logo-text::before {
@@ -238,7 +273,7 @@ main h2 {
 
 .hero-text h5,
 .video-hero-text h5 {
-  font-size: 16px;
+  font-size: 17px;
   margin: 0;
   padding-bottom: 12px;
   letter-spacing: .04em;
@@ -264,18 +299,40 @@ main h2 {
   color: black;
 }
 
+/* productCategories section */
+.productCategories-wrapper {
+  padding: 0 15vw;
+}
+
+#productCategories {
+  border-top: 1px solid black;
+}
+
 
 /* products section */
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 3em;
+}
+
 .products-section {
   width: 80vw;
 }
 
-.products-section h2 {
-  text-align: center;
+.products-section h2,
+.productListCard-title,
+.category-title,
+.aside-blog-title {
   margin: 0;
-  padding: 1em 0;
-  font-size: 2.4em;
-  letter-spacing: .2em;
+  padding: 1em 0 10px;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-weight: 400;
 }
 
 .products-outer-div {
@@ -292,30 +349,60 @@ main h2 {
   width: 100%
 }
 
-/* categories section */
+/* productListCard section */
+.product-list-card-outer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list-card-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.product-list-card-row div:first-child,
+.product-list-card-row div:last-child{
+  flex: 1;
+}
+
+.productListCard-title,
+#productListCard {
+  flex: 8;
+}
+
+.scroll-icon-box-left,
+.scroll-icon-box-right {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.scroll-icon-box-left img,
+.scroll-icon-box-right img {
+  transition: transform .3s;
+}
+
+.scroll-icon-box-right img:hover {
+  transform:scale(1.15);
+}
+.scroll-icon-box-left img:hover {
+  transform:scale(1.15);
+} 
+
+.scroll-icon-box-left {
+  justify-content: flex-end;
+}
+
+.scroll-icon-box-right {
+  justify-content: flex-start;
+}
 
 #productListCard {
   margin: auto;
   width: 100%;
 }
-
-#product-list-card-outer {
-  width: 100%;
-  position: relative;
-  padding: 5em;
-}
-
-#product-list-card-outer::before {
-  content: "POPULAR SELECTIONS";
-  font-size: 32px;
-  line-height: 50px;
-  font-weight: 700;
-  position: absolute;
-  left: 10%; 
-  top: 7%; /* Center vertically */
-  transform: translate(0%, 0%); 
-}
-
 
 /* asideBlog section */
 .blog-section {

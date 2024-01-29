@@ -6,7 +6,6 @@ products dropdown aside
 productCard icon button
 
 //doraditi
-index.html
 footer.html
 
 //ostalo

@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FASHION STORE Main Page</title>
+  <title>THE FASHION STORE</title>
 
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/productCard.css">
+  <link rel="stylesheet" href="/css/productListCard.css">
+  <link rel="stylesheet" href="css/productCategories.css">
+  <link rel="stylesheet" href="/css/blogCard.css">
+  <link rel="stylesheet" href="/css/asideBlog.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
   <div id="wrapper">
     <header id="header"></header>
   </div>
-  <main id="main">
+  <main>
 
     <!-- index video hero -->
     <section class="video-hero-wrapper">
@@ -20,27 +26,40 @@
         <source src="/images/video/thefashion.mp4" type="video/mp4">
       </video>
       <div class="video-hero-text">
-        <h1 class="logo-text">the fashion store</h1>
+        <div class="logo-text">Elevate Your Style</div>
       </div>
       <div class="overlay"></div>
     </section>
+
+    <div class="index-h1">
+      <div class="line-div">
+        <div class="line-inner-div"></div>
+        <div></div>
+      </div>
+      <h1>The Fashion Store</h1>
+      <div class="line-div">
+        <div class="line-inner-div"></div>
+        <div></div>
+      </div>
+    </div>
+    
 
     <!-- index img hero -->
     <section class="hero-wrapper">
       <div class="hero-image">
         <div class="hero-text">
           <h2>AUTUMN-WINTER 2023/2024 IS HERE</h2>
-          <h5>Explore new collection</h5>
+          <h5>Explore New Collection</h5>
           <a href="products.html">
-          <button>ONLINE SHOP</button>
+          <button>SHOP NOW</button>
           </a>
         </div>
       </div>
     </section>
 
     <!-- new arrivals -->
-    <div class="main-wrapper">
-      <section class="products-section">
+    <div class="main-content-wrapper">
+      <!-- <section class="products-section">
         <h2>New Arrivals</h2>
         <div class="products-outer-div">
           <div class="products-card">
@@ -64,11 +83,38 @@
             </a>
           </div>
         </div>
+        
+      </section> -->
+
+      <!-- productCategories section -->
+      <section class="productCategories-wrapper">
+        <div id="productCategories"></div>
       </section>
 
-      <!-- index-categories -->
-      <section id="product-list-card-outer">
-        <div id="productListCard"></div>
+      <!-- productListCard section -->
+      <section class="product-list-card-outer">
+        <div class="product-list-card-row">
+
+          <div></div>
+          <h2 class="productListCard-title">
+            You Might Also Like
+          </h2>
+          <div></div>
+
+        </div>
+        <div class="product-list-card-row">
+
+          <div class="scroll-icon-box-left">
+            <img src="/images/icons/211689_left_arrow_icon.png" alt="">
+          </div>
+
+          <div id="productListCard"></div>
+
+          <div class="scroll-icon-box-right">
+            <img src="/images/icons/211607_right_arrow_icon.png" alt="">
+          </div>
+
+        </div>
       </section>
 
       <!-- asideBlog -->
