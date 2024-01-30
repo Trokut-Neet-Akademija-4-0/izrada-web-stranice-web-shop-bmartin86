@@ -24,15 +24,14 @@
 .footer-row {
   display: flex;
   justify-content: center;
-  flex: 1 1 auto;
 }
 
 .footer-logo {
+  flex: 2;
   gap: 15px;
 }
 
 .footer-item {
-  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,11 +39,16 @@
   font-size: 1em;
 } 
 
+.contact {
+  flex: 1;
+}
+
 .contact address {
   margin-top: 5px;
 }
 
 .footer-nav {
+  flex: 1;
   gap: 4px;
   font-weight: 600;
 }

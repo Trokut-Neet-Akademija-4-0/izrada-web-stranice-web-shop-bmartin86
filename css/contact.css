@@ -47,8 +47,19 @@ main {
   transition: transform .33s smooth;
 }
 
+.contact-social-links button {
+  position: relative;
+  background-color: var(--main-background-color);
+  border: none;
+}
+
+.contact-social-links .tooltip {
+  background-color: rgb(49, 49, 49) !important;
+  color: white !important;
+}
+
 .contact-social-links img:hover {
-  transform: scale(1.15);
+  transform: scale(1.2);
   transition: transform .33s smooth;
   cursor: pointer;
 }

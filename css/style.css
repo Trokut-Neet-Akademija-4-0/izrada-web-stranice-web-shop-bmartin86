@@ -113,6 +113,7 @@ main h2 {
   border: none;
 }
 
+.contact-social-links .tooltip,
 .social-links .tooltip,
 .cart-icon-button .tooltip {
   position: absolute;
@@ -151,11 +152,6 @@ main h2 {
   list-style: none;
   padding: 0;
 }
-
-
-
-
-
 
 .form-submit:hover {
   opacity: 0.8;
