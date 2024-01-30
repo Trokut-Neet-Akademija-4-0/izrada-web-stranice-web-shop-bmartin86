@@ -47,11 +47,11 @@
 }
 
 .cat-hero-text h3 {
-  font-size: 42px;
-  line-height: 1.15;
-  letter-spacing: .03em;
-  margin-bottom: 10px;
   color: var(--main-text-color);
+  letter-spacing: .1em;
+  margin-bottom: 14px;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .cat-hero-text button {

@@ -11,9 +11,9 @@ window.onscroll = function () {
 function scroll() {
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-  if (scrollTop > 60 && scrollTop <= 1380) {
+  if (scrollTop > 60 && scrollTop <= 720) {
    document.getElementById("wrapper").style.top = "0";
   } else {
-   document.getElementById("wrapper").style.top = "-135px";
+   document.getElementById("wrapper").style.top = "-139px";
   }
 };

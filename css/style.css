@@ -10,7 +10,7 @@ body * {
   --main-text-font: 'Roboto Flex', sans-serif;
   --header-font: 'Noto Serif', Arial;
   --main-text-color: white;
-  --secondary-text-color: #551a8b;
+  --link-hover-color: #551a8b;
   --dark-text-color : rgb(16, 16, 16);
   --main-background-color : #f9f7f7;
   --secondary-background-color : #fff;
@@ -52,23 +52,21 @@ footer {
   color: var(--secondary-background-color);
 }
 
-nav {
+.header-nav {
   display: flex;
   justify-content: center;
   padding: 1em 0;
+  gap: 3em;
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
 nav a {
   color: var(--main-text-color);
   text-decoration: none;
-  padding: 0 1em;
-  margin: 0 10px;
-  font-weight: 600;
-  font-size: 1.1em;
-  
 }
 
-nav a:hover {
+.header-nav a:hover {
  text-decoration: underline;
  cursor: pointer;
 }
@@ -89,12 +87,48 @@ main h2 {
   font-weight: 700;
 }
 
+/* tooltips */
+
+.social-links button,
+.cart-icon-button {
+  position: relative;
+  background-color: black;
+  border: none;
+}
+
+.social-links .tooltip,
+.cart-icon-button .tooltip {
+  position: absolute;
+  text-decoration: none;
+  background-color: rgb(181, 181, 181);
+  color: black;
+  padding: 4px 8px;
+  border-radius: 2px;
+  bottom: -30px;
+  left: -12px;
+  opacity: 0;
+  transform: opacity .3s smooth;
+  pointer-events: none;
+}
+
+.cart-icon-button:hover .tooltip,
+.phone-button:hover .tooltip,
+.email-button:hover .tooltip,
+.facebook-button:hover .tooltip,
+.instagram-button:hover .tooltip,
+.tiktok-button:hover .tooltip,
+.linkedin-button:hover .tooltip,
+.twitter-button:hover .tooltip {
+  opacity: 1;
+}
+
 .social-links {
   display: flex;
   justify-content: center;
   gap: 1em;
-  margin-bottom: 1em;
 }
+
+
 
 #contact-main-content ul,
 .contact ul,
@@ -262,7 +296,7 @@ main h2 {
   vertical-align: middle;
 }
 
-.hero-text h2,
+.hero-text h3,
 .hero-text h5,
 .video-hero-text h2 {
   letter-spacing: .1em;
@@ -301,7 +335,7 @@ main h2 {
 
 /* productCategories section */
 .productCategories-wrapper {
-  padding: 0 15vw;
+  padding: 0 20vw;
 }
 
 #productCategories {

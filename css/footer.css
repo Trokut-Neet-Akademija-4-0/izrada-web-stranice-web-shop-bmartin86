@@ -3,8 +3,10 @@
 .footer-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
   text-align: center;
-  color: white;
+  padding-bottom: 12px;
 }
 
 #map-iframe-wrapper {
@@ -21,32 +23,69 @@
 
 .footer-row {
   display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.footer-logo {
+  gap: 15px;
 }
 
 .footer-item {
-  color: white;
-  flex: 1;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
 } 
 
-.contact-legal {
-  justify-content: center;
-  padding: 0 30vw;
+.contact address {
+  margin-top: 5px;
+}
+
+.footer-nav {
+  gap: 4px;
+  font-weight: 600;
+}
+
+.footer-nav a:hover {
+  cursor: pointer;
+}
+
+.footer-social-links {
+  gap: 1.5em;
+}
+
+
+.footer-social-links img {
+  transition: transform .4s smooth;
+}
+
+.footer-social-links img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.legal {
+  gap: 1.5em;
+  flex: 1 1 auto;
 }
 
 .legal a {
-  color: white;
+  color: var(--link-hover-color);
   margin: 0;
+  transition: color .2s;
 }
 
 .legal a:hover {
-  text-decoration: none;
+  color: white;
 }
 
 .signature {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(155, 155, 155);
   padding-right: .3em;
 }
-

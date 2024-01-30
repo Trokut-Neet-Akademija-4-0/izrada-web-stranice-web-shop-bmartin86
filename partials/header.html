@@ -1,26 +1,47 @@
   <div class="header-top-row">
-    <div class="contact-info">
-      <a href="tel:+385221234567" target="_blank">
-        <img src="/images/icons/phone-solid-white.svg" alt="">
-      </a>
-      <a href="mailto:fashion.store@info.org" target="_blank">
-        <img src="/images/icons/envelope-solid-white.svg" alt="">
-      </a>
-      <a href="https://web.facebook.com/" target="_blank">
-        <img src="../images/icons/facebook-f-white.svg" alt="facebook">
-      </a>
-      <a href="https://www.instagram.com/" target="_blank">
-        <img src="../images/icons/instagram-white.svg" alt="instagram">
-      </a>
-      <a href="https://www.tiktok.com" target="_blank">
-        <img src="../images/icons/tiktok-white.svg" alt="tiktok">
-      </a>
-      <a href="https://www.linkedin.com" target="_blank">
-        <img src="../images/icons/linkedin-in-white.svg" alt="linkedin">
-      </a>
-      <a href="https://www.twitter.com" target="_blank">
-        <img src="../images/icons/twitter-white.svg" alt="twitter">
-      </a>
+    <div class="social-links">
+      <button class="phone-button">
+        <a href="tel:+385221234567" target="_blank">
+          <img src="/images/icons/phone-solid-white.svg" alt="Phone">
+        </a>
+        <div class="tooltip">Phone</div>
+      </button>
+      <button class="email-button">
+        <a href="mailto:fashion.store@info.org" target="_blank">
+          <img src="/images/icons/envelope-solid-white.svg" alt="Email">
+        </a>
+        <div class="tooltip">Email</div>
+      </button>
+      <button class="facebook-button">
+        <a href="https://web.facebook.com/" target="_blank">
+          <img src="../images/icons/facebook-f-white.svg" alt="Facebook">
+        </a>
+        <div class="tooltip">Facebook</div>
+      </button>
+      <button class="instagram-button">
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="../images/icons/instagram-white.svg" alt="Instagram">
+        </a>
+        <div class="tooltip">Instagram</div>
+      </button>
+      <button class="tiktok-button">
+        <a href="https://www.tiktok.com" target="_blank">
+          <img src="../images/icons/tiktok-white.svg" alt="TikTok">
+        </a>
+        <div class="tooltip">TikTok</div>
+      </button>  
+      <button class="linkedin-button">
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="../images/icons/linkedin-in-white.svg" alt="LinkedIn">
+        </a>
+        <div class="tooltip">LinkedIn</div>
+      </button>
+      <button class="twitter-button">
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="../images/icons/twitter-white.svg" alt="Twitter">
+        </a>
+        <div class="tooltip">Twitter</div>
+      </button>
     </div>
     <div class="logo-box">
       <div id="logo"><a href="index.html"><img src="/images/wallpaper/logo.avif" alt=""></a></div> 
@@ -28,18 +49,19 @@
 
     <div class="search-cart">
       <input type="text" placeholder="Search...">
-      <a href="../cart.html" target="_parent">
-        <div id="cart-box">
+      <button class="cart-icon-button">
+        <a href="../cart.html" target="_parent">
           <img src="../images/icons/shopping-bag-24.png" alt="Cart" id="cart-icon">
-        </div>
-      </a>
+        </a>
+        <div class="tooltip">Cart</div>
+      </button>
+
     </div>
   </div>
   
-  <nav>
+  <nav class="header-nav">
     <a href="../index.html" target="_parent">HOME</a>
     <a href="../products.html" target="_parent">SHOP</a>
-    <!-- <a href="../productCategories.html" target="_parent">CATEGORIES</a> -->
     <a href="../contact.html" target="_parent">CONTACT</a>
     <a href="../about.html" target="_parent">ABOUT</a>
     <a href="../blog.html" target="_parent">NEWSROOM</a>

@@ -5,9 +5,6 @@ opise na linkove:hover
 products dropdown aside
 productCard icon button
 
-//doraditi
-footer.html
-
 //ostalo
 vendor prefix
 img optimization, alt=""
