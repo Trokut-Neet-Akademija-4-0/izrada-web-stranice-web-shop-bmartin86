@@ -12,8 +12,8 @@ function scroll() {
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
   if (scrollTop > 60 && scrollTop <= 720) {
-   document.getElementById("wrapper").style.top = "0";
+   document.getElementById("header-wrapper").style.top = "0";
   } else {
-   document.getElementById("wrapper").style.top = "-139px";
+   document.getElementById("header-wrapper").style.top = "-139px";
   }
 };
