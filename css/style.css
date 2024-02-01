@@ -360,8 +360,6 @@ main h2 {
   width: 80vw;
 }
 
-
-
 .products-outer-div {
   display: flex;
   justify-content: space-between;
@@ -390,8 +388,10 @@ main h2 {
 }
 
 .product-list-card-row div:first-child,
-.product-list-card-row div:last-child{
+.product-list-card-row div:last-child {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .productListCard-title,
@@ -406,16 +406,20 @@ main h2 {
   font-size: 20px;
 }
 
-.scroll-icon-box-left img,
-.scroll-icon-box-right img {
-  transition: transform .3s;
+.scroll-icon-box-right button,
+.scroll-icon-box-left button {
+  border: none;
+  background-color: var(--main-background-color);
+  transition: transform .14s;
 }
 
-.scroll-icon-box-right img:hover {
+.scroll-icon-box-right button:hover {
   transform:scale(1.15);
+  cursor: pointer;
 }
-.scroll-icon-box-left img:hover {
+.scroll-icon-box-left button:hover {
   transform:scale(1.15);
+  cursor: pointer;
 } 
 
 .scroll-icon-box-left {
