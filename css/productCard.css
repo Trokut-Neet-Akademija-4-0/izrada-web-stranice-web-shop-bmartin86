@@ -1,6 +1,11 @@
-.product-card {
+.product-card,
+.product-description {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-card {
   gap: .8em;
 }
 
@@ -17,6 +22,7 @@
 .product-price,
 .product-category {
   line-height: 20px;
+  align-self: left;
 }
 
 .product-name,

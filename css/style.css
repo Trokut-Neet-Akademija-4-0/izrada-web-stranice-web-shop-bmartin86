@@ -387,11 +387,8 @@ main h2 {
   gap: 12px;
 }
 
-.product-list-card-row div:first-child,
-.product-list-card-row div:last-child {
+.hidden-elem{
   flex: 1;
-  display: flex;
-  align-items: center;
 }
 
 .productListCard-title,
@@ -404,6 +401,7 @@ main h2 {
   display: flex;
   align-items: center;
   font-size: 20px;
+  flex: 1;
 }
 
 .scroll-icon-box-right button,
