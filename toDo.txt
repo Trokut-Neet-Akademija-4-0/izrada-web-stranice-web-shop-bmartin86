@@ -1,10 +1,8 @@
 //postaviti
 *media querry responsiveness
 cookie pop-up
-products dropdown aside
 
 //ostalo
 vendor prefix
-img optimization, alt=""
 *SEO optimization
 

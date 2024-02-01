@@ -1,8 +1,12 @@
 <div id="products-aside">
   <form action="#" method="get" target="_self">
     <ul>
-      <li class="filter-group">CATEGORY
-        <ul>
+      <li class="filter-group">
+        <button onclick="myFunction(this)" class="dropbtn">
+           CATEGORY
+           <img class="myImage" src="../images/icons/angle-down-solid.svg"  alt="arrow down icon">
+        </button>
+        <ul class="dropdown-content">
           <li>
             <label>
               <input type="radio" name="gender" id="gender-female" value="female" /> 
@@ -23,8 +27,12 @@
           </li>
         </ul>
       </li>
-      <li class="filter-group">SHOP BY PRODUCT
-        <ul>
+      <li class="filter-group">
+        <button onclick="myFunction(this)" class="dropbtn">
+           SHOP BY PRODUCT
+           <img class="myImage" src="../images/icons/angle-down-solid.svg"  alt="arrow down icon">
+        </button>
+        <ul class="dropdown-content">
           <li>
             <label>
               <input type="checkbox" name="product-filter" id="product-jackets-coats" value="jackets-coats" /> 
