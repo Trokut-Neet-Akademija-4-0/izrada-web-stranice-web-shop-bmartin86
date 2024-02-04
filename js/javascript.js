@@ -33,11 +33,18 @@ if (document.getElementsByClassName("productCard")) {
 
 
 //load productListCard
-if (document.getElementById("productListCard")) {
+if (document.getElementById("productListCard") || document.getElementById("productListCardTwo")) {
   function loadProductListCard() {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function () {
-      document.getElementById("productListCard").innerHTML = this.responseText;
+      if (document.getElementById("productListCard")) {
+        document.getElementById("productListCard").innerHTML = this.responseText;
+      } else if (document.getElementById("productListCardTwo")) {
+        document.getElementById("productListCardTwo").innerHTML = this.responseText;
+      } else if (document.getElementById("productListCard") && document.getElementById("productListCardTwo")){
+        document.getElementById("productListCard").innerHTML = this.responseText;
+        document.getElementById("productListCardTwo").innerHTML = this.responseText;
+      }
       loadProductCard();
     }
     xhttp.open ("GET", "../partials/productListCard.html");
