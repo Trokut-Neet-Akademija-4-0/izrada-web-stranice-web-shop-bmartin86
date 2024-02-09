@@ -1,7 +1,7 @@
 #products-aside {
   align-self: flex-start;
   flex: 1;
-  padding: 2.4em 1em;
+  padding: 112px 1em 0;
   color: rgb(0, 0, 0);
   position: -webkit-sticky;
   position: sticky;

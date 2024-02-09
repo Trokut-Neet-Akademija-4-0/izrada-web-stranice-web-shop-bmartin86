@@ -1,16 +1,14 @@
 .header-top-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 0;
+  align-items: flex-start;
 }
 
 .social-links,
 .search-cart {
   display: flex;
   align-items: center;
-  padding: 0 30px;
-  width: 50%;
+  padding: 18px 30px 0;
 }
 .search-cart {
   flex: 1;
@@ -39,8 +37,8 @@
   padding: 6px;
   margin-right: 10px;
   border: 1px solid black;
-  border-radius: 5px;
-  width: 200px;
+  border-radius: 4px;
+  width: 250px;
 }
 
 .cart-icon-button {
@@ -59,6 +57,7 @@
   display: flex;
   justify-content: center;
   margin: 0;
+  padding-top: 12px;
 }
 
 .logo-box a {

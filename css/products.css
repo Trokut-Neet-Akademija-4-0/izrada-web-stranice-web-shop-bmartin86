@@ -6,11 +6,14 @@
   padding: 0 1.6em 10vh;
 }
 
+#asideProducts {
+  flex: 1;
+}
+
 #products-div {
   flex: 4;
   display: flex;
   flex-direction: column;
-  padding: 0 1em;
 }
 
 #products-header h2 {

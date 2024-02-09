@@ -8,7 +8,7 @@ function scroll() {
   if (scrollTop > 60 && scrollTop <= 720) {
    document.getElementById("header-wrapper").style.top = "0";
   } else {
-   document.getElementById("header-wrapper").style.top = "-139px";
+   document.getElementById("header-wrapper").style.top = "-150px";
   }
 }
 

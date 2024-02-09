@@ -32,7 +32,7 @@ body {
 
 #header-wrapper {
   position: fixed;
-  top: -135px;
+  top: -150px;
   transition: top 0.5s;
   z-index: 3;
   width: 100%;
@@ -74,7 +74,6 @@ main {
   margin: 0 auto;
 }
 
-
 main h1,
 main h2 {
   font-family: var(--header-font);
@@ -107,7 +106,8 @@ main h2 {
 
 /* tooltips */
 .social-links button,
-.cart-icon-button {
+.cart-icon-button,
+.footer-social-links button {
   position: relative;
   background-color: black;
   border: none;
@@ -115,7 +115,8 @@ main h2 {
 
 .contact-social-links .tooltip,
 .social-links .tooltip,
-.cart-icon-button .tooltip {
+.cart-icon-button .tooltip,
+.footer-social-links .tooltip {
   position: absolute;
   text-decoration: none;
   background-color: rgb(181, 181, 181);
