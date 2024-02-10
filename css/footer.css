@@ -45,10 +45,6 @@
   flex: 1;
 }
 
-.footer-item a {
-  text-align: left; /* Align the text inside links to the left */
-}
-
 .contact address {
   margin-top: 5px;
 }
