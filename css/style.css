@@ -247,7 +247,7 @@ main h2 {
 }
 
 .hero-wrapper {
-  height: calc(100vh - 135px);
+  height: calc(100vh - 150px);
   margin: 0 9vw;
   border-top: 1.5px solid rgb(60, 60, 60);
   border-bottom: 1.5px solid rgb(60, 60, 60);
