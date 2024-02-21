@@ -5,7 +5,7 @@ if (document.getElementById("header")) {
     xhttp.onload = function () {
       document.getElementById("header").innerHTML = this.responseText;
     }
-    xhttp.open ("GET", "../partials/header.html");
+    xhttp.open ("GET", "partials/header.html");
     xhttp.send();
   }
   loadHeader();
@@ -25,7 +25,7 @@ if (document.getElementsByClassName("productCard")) {
         productCards[i].innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "../partials/productCard.html");
+    xhttp.open("GET", "partials/productCard.html");
     xhttp.send();
   }
   loadProductCard();
@@ -47,7 +47,7 @@ if (document.getElementById("productListCard") || document.getElementById("produ
       }
       loadProductCard();
     }
-    xhttp.open ("GET", "../partials/productListCard.html");
+    xhttp.open ("GET", "partials/productListCard.html");
     xhttp.send();
   }
   loadProductListCard();
@@ -62,7 +62,7 @@ if (document.getElementById("productCategories")) {
       document.getElementById("productCategories").innerHTML = this.responseText;
       loadProductListCard();
     }
-    xhttp.open ("GET", "../partials/productCategories.html");
+    xhttp.open ("GET", "partials/productCategories.html");
     xhttp.send();
   }
   loadProductCategories();
@@ -76,7 +76,7 @@ if(document.getElementById("asideProducts")) {
     xhttp.onload = function () {
       document.getElementById("asideProducts").innerHTML = this.responseText;
     }
-    xhttp.open ("GET", "../partials/asideProducts.html");
+    xhttp.open ("GET", "partials/asideProducts.html");
     xhttp.send();
   }
   loadAsideProducts();  
@@ -97,7 +97,7 @@ if (document.getElementsByClassName("blogCard")) {
         blogCards[i].innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "../partials/blogCard.html");
+    xhttp.open("GET", "partials/blogCard.html");
     xhttp.send();
   }
 }  
@@ -116,7 +116,7 @@ if ( document.getElementsByClassName("blogCardLandscape")) {
         blogCardLandscape[i].innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "../partials/blogCardLandscape.html");
+    xhttp.open("GET", "partials/blogCardLandscape.html");
     xhttp.send();
   }
   loadBlogCardLandscape();
@@ -131,7 +131,7 @@ if(document.getElementById("asideBlog")) {
       document.getElementById("asideBlog").innerHTML = this.responseText;
       loadBlogCard();
     }
-    xhttp.open ("GET", "../partials/asideBlog.html");
+    xhttp.open ("GET", "partials/asideBlog.html");
     xhttp.send();
   }
   loadAsideBlog();
@@ -144,7 +144,7 @@ function loadFooter() {
   xhttp.onload = function () {
     document.getElementById("footer").innerHTML = this.responseText;
   }
-  xhttp.open ("GET", "../partials/footer.html");
+  xhttp.open ("GET", "partials/footer.html");
   xhttp.send();
 }
 loadFooter();
