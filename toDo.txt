@@ -5,10 +5,3 @@ cookie pop-up
 //ostalo
 vendor prefix
 *SEO optimization
-
-<<<<<<< HEAD
-test
-=======
-promjena
->>>>>>> a0b11bddd74aca2ad2a36e7c9daf3e41cd505560
-
